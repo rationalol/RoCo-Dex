@@ -1,0 +1,163 @@
+import json
+from collections import Counter
+import os
+
+with open('data/data.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+with open('data/pets2.json', 'r', encoding='utf-8') as f:
+    elementList = json.load(f)
+
+pets = []
+
+for key, d in data.items():
+
+    element = []
+
+    petIndex = ''
+
+    shiny = 0
+
+    for p in elementList:
+        if int(key) == int(p.get("i")):
+            petIndex = p.get("n")
+            shiny = p.get('sh')
+            element.append(p.get("e"))
+            if p.get("e2") != "":
+                element.append(p.get("e2"))
+
+    # 转换技能
+    skills = {
+        "group1": [],
+        "group2": [],
+        "group3": [],
+    }
+    for skill in d.get('sk', {}).get('s', []):
+        skills["group1"].append({
+            'name': skill.get('nm', ''),
+            'lv': skill.get('lv', ''),
+            'element': skill.get('el', ''),
+            'type': skill.get('tp', ''),
+            'cost': int(skill.get('ec', 0)),
+            'power': int(skill.get('pw', 0)),
+            'desc': skill.get('ef', '')
+        })
+
+    for skill in d.get('sk', {}).get('b', []):
+        skills["group2"].append({
+            'name': skill.get('nm', ''),
+            'lv': skill.get('lv', ''),
+            'element': skill.get('el', ''),
+            'type': skill.get('tp', ''),
+            'cost': int(skill.get('ec', 0)),
+            'power': int(skill.get('pw', 0)),
+            'desc': skill.get('ef', '')
+        })
+
+    for skill in d.get('sk', {}).get('t', []):
+        skills["group3"].append({
+            'name': skill.get('nm', ''),
+            'lv': skill.get('lv', ''),
+            'element': skill.get('el', ''),
+            'type': skill.get('tp', ''),
+            'cost': int(skill.get('ec', 0)),
+            'power': int(skill.get('pw', 0)),
+            'desc': skill.get('ef', '')
+        })
+
+    evoList = []
+    for evo in d['evo']:
+        evoList.append({
+            'id': evo['i'],
+            'name': evo['nm'],
+            'name2': evo['fn'],
+            'stage': evo['s'],
+            'lv': evo['lv'],
+            'avatar': os.path.basename(evo['img']),
+        })
+
+    formList = []
+    for form in d['forms']:
+        formList.append({
+            'id': form['i'],
+            'name': form['fn'],
+            'type': form['f'],
+            'avatar': os.path.basename(form['img']),
+        })
+
+    currentEvo = {}
+    for evo in evoList:
+        if int(key) == int(evo['id']):
+            currentEvo = evo
+
+
+    petName = currentEvo.get('name', '')
+
+    # 常规形态
+    if petName != '':
+        pets.append({
+            'id': int(key),
+            'pindex':petIndex,
+            'name': currentEvo.get('name', ''),
+            'element': element,
+            'shiny':shiny,
+            'avatar': currentEvo.get('avatar', ''),
+            'forms': formList,
+            'evo': evoList,
+            'hp': d['hp'],
+            'atk': d['atk'],
+            'mat': d['matk'],
+            'def': d['df'],
+            'mdf': d['mdf'],
+            'spd': d['spd'],
+            'height': d['h'],
+            'weight': d['w'],
+            'loc': d['loc'],
+            'nick': d['nick'],
+            'description': d['desc'],
+            'trait': {
+                'name': d.get('tn', ''),
+                'desc': d.get('te', '')
+            },
+            'skills': skills,
+        })
+    else:
+        # print(int(key),pets[int(key)-2])
+        petInfo = {}
+
+        for petForms in pets[int(key)-2]['forms']:
+            if petForms['id'] == int(key):
+                petInfo = petForms
+
+        # 地区形态 超进化
+        pets.append({
+            'id': int(key),
+            'pindex':'',
+            'name': petInfo.get('name',''),
+            'element': pets[int(key)-2]['element'],
+            'shiny':shiny,
+            'avatar': petInfo.get('avatar',''),
+            'forms': formList,
+            'evo': evoList,
+            'hp': d['hp'],
+            'atk': d['atk'],
+            'mat': d['matk'],
+            'def': d['df'],
+            'mdf': d['mdf'],
+            'spd': d['spd'],
+            'height': d['h'],
+            'weight': d['w'],
+            'loc': d['loc'],
+            'nick': d['nick'],
+            'description': d['desc'],
+            'trait': {
+                'name': d.get('tn', ''),
+                'desc': d.get('te', '')
+            },
+            'skills': skills,
+        })
+
+with open('data/pets_converted.json', 'w', encoding='utf-8') as f:
+    json.dump(pets, f, ensure_ascii=False, indent=2)
+
+print(f'Done. {len(pets)} pets converted -> pets_converted.json')
