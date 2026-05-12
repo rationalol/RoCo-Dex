@@ -62,7 +62,7 @@ data class PetForm(
 )
 
 enum class StatType(val label: String) {
-    HP("HP"),
+    HP("生命"),
     ATK("物攻"),
     MAT("魔攻"),
     DEF("物防"),

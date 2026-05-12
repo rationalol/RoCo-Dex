@@ -460,12 +460,13 @@ private fun PetDescriptionSection(pet: Pet) {
             Spacer(modifier = Modifier.height(16.dp))
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
             ) {
                 InfoItem("身高", pet.height ?: "未知")
                 InfoItem("体重", pet.weight ?: "未知")
-                InfoItem("获取地点", pet.loc ?: "未知")
             }
+            Spacer(modifier = Modifier.height(16.dp))
+            InfoItem("获取地点", pet.loc ?: "未知")
         }
     }
 }

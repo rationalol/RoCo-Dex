@@ -119,7 +119,7 @@ fun GalleryScreen(
                         onValueChange = { viewModel.onSearchQueryChange(it) },
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(horizontal = 8.dp, vertical = 2.dp),
+                            .padding(horizontal = 12.dp, vertical = 2.dp),
                         placeholder = { Text("搜索精灵名称或编号", fontSize = 12.sp) },
                         leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
                         shape = CircleShape,
@@ -135,7 +135,7 @@ fun GalleryScreen(
 
 
             }
-// --- 第 2 部分：始终吸顶的筛选栏 ---
+        // --- 第 2 部分：始终吸顶的筛选栏 ---
             stickyHeader(key = "filter_bar") {
                 Box(
                     modifier = Modifier
@@ -155,7 +155,7 @@ fun GalleryScreen(
                     )
                 }
             }
-// --- 第 3 部分：精灵网格（用 Row 模拟 Grid） ---
+        // --- 第 3 部分：精灵网格（用 Row 模拟 Grid） ---
             if (isLoading) {
                 item(key = "loading") {
                     Box(

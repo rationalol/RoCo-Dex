@@ -104,7 +104,7 @@ fun SkillsScreen(
                         onValueChange = { viewModel.onSearchQueryChange(it) },
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(horizontal = 8.dp, vertical = 2.dp),
+                            .padding(horizontal = 12.dp, vertical = 2.dp),
                         placeholder = { Text("搜索招式名称、属性、类型或描述", fontSize = 12.sp) },
                         leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
                         shape = CircleShape,

@@ -46,3 +46,7 @@ fun shinyIconPath(name: String): String {
 fun energyConsumptionIconPath(name: String): String{
     return "file:///android_asset/skills/$name.png"
 }
+
+fun mapBaseStatsIconPath(name:String) : String{
+    return "file:///android_asset/baseStatsIcon/$name.png"
+}
