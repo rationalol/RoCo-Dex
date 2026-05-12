@@ -25,15 +25,19 @@ class GalleryViewModel(application: Application) : AndroidViewModel(application)
     private val _selectedElements = MutableStateFlow<Set<String>>(emptySet())
     val selectedElements: StateFlow<Set<String>> = _selectedElements.asStateFlow()
 
+    private val _isShinyOnly = MutableStateFlow(false)
+    val isShinyOnly: StateFlow<Boolean> = _isShinyOnly.asStateFlow()
+
     private val _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
 
-    val pets: StateFlow<List<Pet>> = combine(_allPets, _selectedElements, _searchQuery) { all, elements, query ->
+    val pets: StateFlow<List<Pet>> = combine(_allPets, _selectedElements, _isShinyOnly, _searchQuery) { all, elements, shinyOnly, query ->
         all.filter { pet ->
             val elementMatch = elements.isEmpty() || pet.element.any { it in elements }
+            val shinyMatch = !shinyOnly || pet.shiny == 1
             val nameMatch = query.isEmpty() || pet.name.contains(query, ignoreCase = true) || pet.id.toString().contains(query)
             val pindexNotEmpty = pet.pindex.isNotEmpty()
-            elementMatch && nameMatch && pindexNotEmpty
+            elementMatch && shinyMatch && nameMatch && pindexNotEmpty
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
@@ -57,8 +61,13 @@ class GalleryViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
+    fun toggleShiny() {
+        _isShinyOnly.value = !_isShinyOnly.value
+    }
+
     fun clearFilters() {
         _selectedElements.value = emptySet()
+        _isShinyOnly.value = false
     }
 
     fun onSearchQueryChange(query: String) {

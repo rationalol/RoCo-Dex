@@ -119,12 +119,9 @@ fun PetCard(
 
                     if (pet.shiny == 1)
                         AsyncImage(
-                            model = shinyIconPath("1"),
-                            contentDescription = pet.name,
-                            modifier = Modifier
-                                .fillMaxWidth(1f)
-                                .aspectRatio(1.1f),
-                            contentScale = ContentScale.Fit
+                            model = "file:///android_asset/shiny/1.png",
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp)
                         )
                 }
 

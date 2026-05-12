@@ -49,9 +49,15 @@ fun FilterBar(
     selectedElements: Set<String>,
     onToggleElement: (String) -> Unit,
     onClearFilters: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    showShinyFilter: Boolean = false,
+    isShinyOnly: Boolean = false,
+    onToggleShiny: () -> Unit = {}
 ) {
     var expanded by remember { mutableStateOf(false) }
+
+    val hasElementFilters = selectedElements.isNotEmpty()
+    val hasAnyFilter = hasElementFilters || isShinyOnly
 
     Column(modifier = modifier.fillMaxWidth()) {
         Row(
@@ -61,10 +67,11 @@ fun FilterBar(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Start
         ) {
+            // 属性筛选切换按钮
             Surface(
                 onClick = { expanded = !expanded },
                 shape = RoundedCornerShape(20.dp),
-                color = if (selectedElements.isNotEmpty()) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                color = if (hasElementFilters) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
                 modifier = Modifier.height(36.dp)
             ) {
                 Row(
@@ -75,26 +82,56 @@ fun FilterBar(
                         imageVector = Icons.Default.FilterList,
                         contentDescription = null,
                         modifier = Modifier.size(18.dp),
-                        tint = if (selectedElements.isNotEmpty()) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                        tint = if (hasElementFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Spacer(modifier = Modifier.width(6.dp))
                     Text(
-                        text = if (selectedElements.isEmpty()) "属性筛选" else "属性 (${selectedElements.size})",
+                        text = if (!hasElementFilters) "属性筛选" else "属性 (${selectedElements.size})",
                         fontSize = 13.sp,
                         fontWeight = FontWeight.Medium,
-                        color = if (selectedElements.isNotEmpty()) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                        color = if (hasElementFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Spacer(modifier = Modifier.width(4.dp))
                     Icon(
                         imageVector = if (expanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
                         contentDescription = null,
                         modifier = Modifier.size(18.dp),
-                        tint = if (selectedElements.isNotEmpty()) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                        tint = if (hasElementFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
             }
+
+            // 异色筛选按钮 (与属性筛选同级)
+            if (showShinyFilter) {
+                Spacer(modifier = Modifier.width(8.dp))
+                Surface(
+                    onClick = onToggleShiny,
+                    shape = RoundedCornerShape(20.dp),
+                    color = if (isShinyOnly) Color(0xFFFFD700).copy(alpha = 0.2f) else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                    border = if (isShinyOnly) androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFFFD700)) else null,
+                    modifier = Modifier.height(36.dp)
+                ) {
+                    Row(
+                        modifier = Modifier.padding(horizontal = 12.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        AsyncImage(
+                            model = "file:///android_asset/shiny/1.png",
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp)
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Text(
+                            text = "异色",
+                            fontSize = 13.sp,
+                            fontWeight = if (isShinyOnly) FontWeight.Bold else FontWeight.Medium,
+                            color = if (isShinyOnly) Color(0xFFB8860B) else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+            }
             
-            if (selectedElements.isNotEmpty()) {
+            if (hasAnyFilter) {
                 Spacer(modifier = Modifier.width(8.dp))
                 TextButton(
                     onClick = onClearFilters,
@@ -115,7 +152,6 @@ fun FilterBar(
                 modifier = Modifier.fillMaxWidth(),
                 color = MaterialTheme.colorScheme.surface,
                 tonalElevation = 1.dp,
-                shadowElevation = 2.dp
             ) {
                 FlowRow(
                     modifier = Modifier
@@ -129,7 +165,8 @@ fun FilterBar(
                         val color = getElementColor(element)
                         
                         FilterBadge(
-                            element = element,
+                            text = element,
+                            iconUrl = mapElementIconPath(element),
                             isSelected = isSelected,
                             color = color,
                             onClick = { onToggleElement(element) }
@@ -141,9 +178,11 @@ fun FilterBar(
     }
 }
 
+
 @Composable
 private fun FilterBadge(
-    element: String,
+    text: String,
+    iconUrl: String,
     isSelected: Boolean,
     color: Color,
     onClick: () -> Unit
@@ -160,13 +199,13 @@ private fun FilterBadge(
             verticalAlignment = Alignment.CenterVertically
         ) {
             AsyncImage(
-                model = mapElementIconPath(element),
+                model = iconUrl,
                 contentDescription = null,
                 modifier = Modifier.size(16.dp)
             )
             Spacer(modifier = Modifier.width(4.dp))
             Text(
-                text = element,
+                text = text,
                 fontSize = 12.sp,
                 fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
                 color = if (isSelected) color else MaterialTheme.colorScheme.onSurfaceVariant
@@ -174,3 +213,4 @@ private fun FilterBadge(
         }
     }
 }
+
