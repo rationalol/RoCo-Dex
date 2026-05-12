@@ -62,8 +62,6 @@ fun WeaknessScreen(
     val hasSelection = selectedElements.isNotEmpty()
     val selectionCount = selectedElements.size
 
-    val pureElements = allElements.filter { it != "全部" }
-
     Scaffold(
         topBar = {
             TopAppBar(
@@ -97,7 +95,7 @@ fun WeaknessScreen(
             )
 
             // 属性选择：每行 4 个，折行
-            pureElements.chunked(4).forEach { rowElements ->
+            allElements.chunked(4).forEach { rowElements ->
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()

@@ -13,7 +13,7 @@ class WeaknessViewModel(application: Application) : AndroidViewModel(application
 
     private val weaknessTable = PetRepository(application).getWeaknessTable()
 
-    private val elementDisplayOrder = allElements.filter { it != "全部" }
+    private val elementDisplayOrder = allElements
 
     private val _selectedElements = MutableStateFlow<List<String>>(emptyList())
     val selectedElements: StateFlow<List<String>> = _selectedElements.asStateFlow()

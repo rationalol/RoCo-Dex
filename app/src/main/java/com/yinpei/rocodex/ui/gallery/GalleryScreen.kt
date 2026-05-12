@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.Search
@@ -76,7 +77,7 @@ fun GalleryScreen(
     }
 
     val pets by viewModel.pets.collectAsState()
-    val selectedElement by viewModel.selectedElement.collectAsState()
+    val selectedElements by viewModel.selectedElements.collectAsState()
     val searchQuery by viewModel.searchQuery.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
 
@@ -117,10 +118,10 @@ fun GalleryScreen(
                         onValueChange = { viewModel.onSearchQueryChange(it) },
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(horizontal = 4.dp, vertical = 2.dp),
+                            .padding(horizontal = 8.dp, vertical = 2.dp),
                         placeholder = { Text("搜索精灵名称或编号", fontSize = 12.sp) },
                         leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
-                        shape = MaterialTheme.shapes.medium,
+                        shape = CircleShape,
                         singleLine = true,
                         colors = TextFieldDefaults.colors(
                             focusedContainerColor = MaterialTheme.colorScheme.surface,
@@ -143,8 +144,9 @@ fun GalleryScreen(
                     // 可选：添加一点底部的阴影或边框，让吸顶效果更具立体感
                 ) {
                     FilterBar(
-                        selectedElement = selectedElement,
-                        onElementSelected = { viewModel.selectElement(it) },
+                        selectedElements = selectedElements,
+                        onToggleElement = { viewModel.toggleElement(it) },
+                        onClearFilters = { viewModel.clearFilters() },
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
                 }

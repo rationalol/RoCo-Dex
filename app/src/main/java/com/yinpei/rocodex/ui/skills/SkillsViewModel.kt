@@ -28,21 +28,21 @@ class SkillsViewModel(application: Application) : AndroidViewModel(application) 
     private val _searchQuery = MutableStateFlow("")
     val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
 
-    private val _selectedElement = MutableStateFlow("全部")
-    val selectedElement: StateFlow<String> = _selectedElement.asStateFlow()
+    private val _selectedElements = MutableStateFlow<Set<String>>(emptySet())
+    val selectedElements: StateFlow<Set<String>> = _selectedElements.asStateFlow()
 
     private val _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
 
     val skillItems: StateFlow<List<IndexedSkillEntry>> = combine(
         _allIndexed,
-        _selectedElement,
+        _selectedElements,
         _searchQuery
-    ) { indexed, element, query ->
+    ) { indexed, elements, query ->
         val q = query.trim()
         indexed.filter { item ->
             val skill = item.entry.asSkill()
-            val elementMatch = element == "全部" || skill.element == element
+            val elementMatch = elements.isEmpty() || skill.element in elements
             val searchMatch = q.isEmpty() ||
                 skill.name.contains(q, ignoreCase = true) ||
                 skill.desc.contains(q, ignoreCase = true) ||
@@ -68,8 +68,16 @@ class SkillsViewModel(application: Application) : AndroidViewModel(application) 
         }
     }
 
-    fun selectElement(element: String) {
-        _selectedElement.value = element
+    fun toggleElement(element: String) {
+        _selectedElements.value = if (_selectedElements.value.contains(element)) {
+            _selectedElements.value - element
+        } else {
+            _selectedElements.value + element
+        }
+    }
+
+    fun clearFilters() {
+        _selectedElements.value = emptySet()
     }
 
     fun onSearchQueryChange(query: String) {

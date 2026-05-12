@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.Search
@@ -58,7 +59,7 @@ fun SkillsScreen(
     viewModel: SkillsViewModel = viewModel()
 ) {
     val skillItems by viewModel.skillItems.collectAsState()
-    val selectedElement by viewModel.selectedElement.collectAsState()
+    val selectedElements by viewModel.selectedElements.collectAsState()
     val searchQuery by viewModel.searchQuery.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
 
@@ -103,17 +104,17 @@ fun SkillsScreen(
                         onValueChange = { viewModel.onSearchQueryChange(it) },
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(horizontal = 4.dp, vertical = 2.dp),
+                            .padding(horizontal = 8.dp, vertical = 2.dp),
                         placeholder = { Text("搜索招式名称、属性、类型或描述", fontSize = 12.sp) },
                         leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
-                        shape = MaterialTheme.shapes.medium,
+                        shape = CircleShape,
                         singleLine = true,
                         colors = TextFieldDefaults.colors(
                             focusedContainerColor = MaterialTheme.colorScheme.surface,
                             unfocusedContainerColor = MaterialTheme.colorScheme.surface,
                             focusedIndicatorColor = MaterialTheme.colorScheme.primary,
                             unfocusedIndicatorColor = MaterialTheme.colorScheme.outlineVariant
-                        )
+                        ),
                     )
                 }
             }
@@ -125,8 +126,9 @@ fun SkillsScreen(
                         .background(MaterialTheme.colorScheme.surface)
                 ) {
                     FilterBar(
-                        selectedElement = selectedElement,
-                        onElementSelected = { viewModel.selectElement(it) },
+                        selectedElements = selectedElements,
+                        onToggleElement = { viewModel.toggleElement(it) },
+                        onClearFilters = { viewModel.clearFilters() },
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
                 }
@@ -166,7 +168,7 @@ fun SkillsScreen(
                                 )
                             }
                         }
-                        repeat(2 - rowItems.size) {
+                        repeat(cellsSkillsRow - rowItems.size) {
                             Spacer(modifier = Modifier.weight(1f))
                         }
                     }

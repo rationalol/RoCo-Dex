@@ -1,25 +1,39 @@
 package com.yinpei.rocodex.ui.components
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.horizontalScroll
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.expandVertically
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.shrinkVertically
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.FilterList
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -29,69 +43,134 @@ import com.yinpei.rocodex.data.allElements
 import com.yinpei.rocodex.data.getElementColor
 import com.yinpei.rocodex.data.mapElementIconPath
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun FilterBar(
-    selectedElement: String,
-    onElementSelected: (String) -> Unit,
+    selectedElements: Set<String>,
+    onToggleElement: (String) -> Unit,
+    onClearFilters: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    Row(
-        modifier = modifier
-            .horizontalScroll(rememberScrollState())
-            .padding(horizontal = 12.dp, vertical = 12.dp),
-        horizontalArrangement = Arrangement.spacedBy(10.dp),
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        allElements.forEach { element ->
-            val isSelected = selectedElement == element
-            val elementColor = if (element == "全部") {
-                MaterialTheme.colorScheme.primary
-            } else {
-                getElementColor(element)
-            }
+    var expanded by remember { mutableStateOf(false) }
 
-            // 选中状态使用：属性色 -> 白色半透明 的垂直渐变
-            val backgroundModifier = if (isSelected) {
-                Modifier.background(
-                    Brush.verticalGradient(
-                        colors = listOf(
-                            elementColor,
-                            MaterialTheme.colorScheme.background.copy(alpha = 0.4f)
-                        )
-                    )
-                )
-            } else {
-                // 未选中状态使用低透明度的表面色（毛玻璃感）
-                Modifier.background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f))
-            }
-
-            Box(
-                modifier = Modifier
-                    .clip(RoundedCornerShape(20.dp))
-                    .then(backgroundModifier)
-                    .clickable { onElementSelected(element) }
-                    .padding(horizontal = 14.dp, vertical = 8.dp)
+    Column(modifier = modifier.fillMaxWidth()) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 8.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Start
+        ) {
+            Surface(
+                onClick = { expanded = !expanded },
+                shape = RoundedCornerShape(20.dp),
+                color = if (selectedElements.isNotEmpty()) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                modifier = Modifier.height(36.dp)
             ) {
                 Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.Center
+                    modifier = Modifier.padding(horizontal = 12.dp),
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    if (element != "全部") {
-                        AsyncImage(
-                            model = mapElementIconPath(element),
-                            contentDescription = null,
-                            modifier = Modifier.size(20.dp)
-                        )
-                        Spacer(modifier = Modifier.width(6.dp))
-                    }
+                    Icon(
+                        imageVector = Icons.Default.FilterList,
+                        contentDescription = null,
+                        modifier = Modifier.size(18.dp),
+                        tint = if (selectedElements.isNotEmpty()) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Spacer(modifier = Modifier.width(6.dp))
                     Text(
-                        text = element,
-                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
-                        color = if (isSelected) MaterialTheme.colorScheme.onBackground else MaterialTheme.colorScheme.onSurfaceVariant,
-                        fontSize = 14.sp
+                        text = if (selectedElements.isEmpty()) "属性筛选" else "属性 (${selectedElements.size})",
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.Medium,
+                        color = if (selectedElements.isNotEmpty()) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Spacer(modifier = Modifier.width(4.dp))
+                    Icon(
+                        imageVector = if (expanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
+                        contentDescription = null,
+                        modifier = Modifier.size(18.dp),
+                        tint = if (selectedElements.isNotEmpty()) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
             }
+            
+            if (selectedElements.isNotEmpty()) {
+                Spacer(modifier = Modifier.width(8.dp))
+                TextButton(
+                    onClick = onClearFilters,
+                    contentPadding = PaddingValues(horizontal = 8.dp),
+                    modifier = Modifier.height(36.dp)
+                ) {
+                    Text("重置", fontSize = 13.sp)
+                }
+            }
+        }
+
+        AnimatedVisibility(
+            visible = expanded,
+            enter = expandVertically() + fadeIn(),
+            exit = shrinkVertically() + fadeOut()
+        ) {
+            Surface(
+                modifier = Modifier.fillMaxWidth(),
+                color = MaterialTheme.colorScheme.surface,
+                tonalElevation = 1.dp,
+                shadowElevation = 2.dp
+            ) {
+                FlowRow(
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    allElements.forEach { element ->
+                        val isSelected = selectedElements.contains(element)
+                        val color = getElementColor(element)
+                        
+                        FilterBadge(
+                            element = element,
+                            isSelected = isSelected,
+                            color = color,
+                            onClick = { onToggleElement(element) }
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun FilterBadge(
+    element: String,
+    isSelected: Boolean,
+    color: Color,
+    onClick: () -> Unit
+) {
+    Surface(
+        onClick = onClick,
+        shape = RoundedCornerShape(8.dp),
+        color = if (isSelected) color.copy(alpha = 0.2f) else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f),
+        border = if (isSelected) androidx.compose.foundation.BorderStroke(1.dp, color) else null,
+        modifier = Modifier.height(32.dp)
+    ) {
+        Row(
+            modifier = Modifier.padding(horizontal = 8.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            AsyncImage(
+                model = mapElementIconPath(element),
+                contentDescription = null,
+                modifier = Modifier.size(16.dp)
+            )
+            Spacer(modifier = Modifier.width(4.dp))
+            Text(
+                text = element,
+                fontSize = 12.sp,
+                fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                color = if (isSelected) color else MaterialTheme.colorScheme.onSurfaceVariant
+            )
         }
     }
 }

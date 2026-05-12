@@ -22,16 +22,15 @@ class GalleryViewModel(application: Application) : AndroidViewModel(application)
     private val _searchQuery = MutableStateFlow("")
     val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
 
-    private val _selectedElement = MutableStateFlow("全部")
-    val selectedElement: StateFlow<String> = _selectedElement.asStateFlow()
+    private val _selectedElements = MutableStateFlow<Set<String>>(emptySet())
+    val selectedElements: StateFlow<Set<String>> = _selectedElements.asStateFlow()
 
     private val _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
 
-    val pets: StateFlow<List<Pet>> = combine(_allPets, _selectedElement, _searchQuery) { all, element, query ->
+    val pets: StateFlow<List<Pet>> = combine(_allPets, _selectedElements, _searchQuery) { all, elements, query ->
         all.filter { pet ->
-
-            val elementMatch = element == "全部" || element in pet.element
+            val elementMatch = elements.isEmpty() || pet.element.any { it in elements }
             val nameMatch = query.isEmpty() || pet.name.contains(query, ignoreCase = true) || pet.id.toString().contains(query)
             val pindexNotEmpty = pet.pindex.isNotEmpty()
             elementMatch && nameMatch && pindexNotEmpty
@@ -50,8 +49,16 @@ class GalleryViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
-    fun selectElement(element: String) {
-        _selectedElement.value = element
+    fun toggleElement(element: String) {
+        _selectedElements.value = if (_selectedElements.value.contains(element)) {
+            _selectedElements.value - element
+        } else {
+            _selectedElements.value + element
+        }
+    }
+
+    fun clearFilters() {
+        _selectedElements.value = emptySet()
     }
 
     fun onSearchQueryChange(query: String) {
