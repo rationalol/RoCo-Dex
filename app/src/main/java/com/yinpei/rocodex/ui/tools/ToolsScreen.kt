@@ -19,6 +19,7 @@ import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material.icons.outlined.ClearAll
 import androidx.compose.material.icons.outlined.CompareArrows
 import androidx.compose.material.icons.outlined.Groups
+import androidx.compose.material.icons.outlined.Map
 import androidx.compose.material.icons.outlined.Person
 import androidx.compose.material.icons.outlined.Psychology
 import androidx.compose.material.icons.outlined.Star
@@ -86,6 +87,10 @@ fun ToolsScreen(
             ){
                 onWeaknessClick()
             }
+            MenuItem(
+                icon = Icons.Outlined.Map,
+                title = "地图"
+            )
         }
     }
 }

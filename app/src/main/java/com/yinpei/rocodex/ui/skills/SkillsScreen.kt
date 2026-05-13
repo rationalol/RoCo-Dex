@@ -1,6 +1,7 @@
 package com.yinpei.rocodex.ui.skills
 
 import android.os.Build
+import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -164,7 +165,9 @@ fun SkillsScreen(
                             Box(modifier = Modifier.weight(1f)) {
                                 SkillCard(
                                     skill = item.entry.asSkill(),
-                                    onClick = { onSkillClick(item.catalogIndex) }
+                                    onClick = {
+                                        onSkillClick(item.catalogIndex)
+                                    }
                                 )
                             }
                         }

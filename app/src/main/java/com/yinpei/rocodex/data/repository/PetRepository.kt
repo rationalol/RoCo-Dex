@@ -73,7 +73,16 @@ class PetRepository(private val context: Context) {
 
     /** 与 [getSkillCatalogEntries] 顺序一致的下标，用于从图鉴 [Skill] 跳转招式详情 */
     fun getSkillCatalogIndex(skill: Skill): Int? {
-        val idx = getSkillCatalogEntries().indexOfFirst { it.asSkill() == skill }
+        val idx = getSkillCatalogEntries().indexOfFirst {
+            val s = it.asSkill()
+            // 忽略 lv 字段进行比较，因为 pets.json 中的 lv 是学习等级，而 skills_output.json 中通常为空或固定值
+            s.name == skill.name &&
+            s.element == skill.element &&
+            s.type == skill.type &&
+            s.cost == skill.cost &&
+            s.power == skill.power &&
+            s.desc == skill.desc
+        }
         return idx.takeIf { it >= 0 }
     }
 

@@ -1,6 +1,7 @@
 package com.yinpei.rocodex.ui.detail
 
 import android.os.Build
+import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -64,6 +65,7 @@ import com.yinpei.rocodex.data.model.Evo
 import com.yinpei.rocodex.data.model.Pet
 import com.yinpei.rocodex.data.model.PetForm
 import com.yinpei.rocodex.data.model.Skill
+import com.yinpei.rocodex.data.model.SkillCatalogEntry
 import com.yinpei.rocodex.ui.components.ElementBadgeRow
 import com.yinpei.rocodex.ui.components.SkillCard
 import com.yinpei.rocodex.ui.components.StatBarGroup
@@ -261,7 +263,9 @@ private fun SkillGroupSection(
         userScrollEnabled = false
     ) {
         items(skills) { skill ->
-            SkillCard(skill = skill, onClick = { onSkillClick(skill) })
+            SkillCard(skill = skill, onClick = {
+                onSkillClick(skill)
+            })
         }
     }
     Spacer(modifier = Modifier.height(20.dp))

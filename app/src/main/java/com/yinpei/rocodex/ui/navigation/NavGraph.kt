@@ -2,6 +2,7 @@ package com.yinpei.rocodex.ui.navigation
 
 import android.net.Uri
 import android.os.Build
+import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -98,6 +99,7 @@ fun NavGraph(navController: NavHostController) {
         composable(Routes.SKILLS) {
             SkillsScreen(
                 onSkillClick = { skillIndex ->
+                    Log.d("技能页技能点击后",skillIndex.toString())
                     navController.navigate(Routes.skillDetail(skillIndex))
                 }
             )
@@ -134,6 +136,7 @@ fun NavGraph(navController: NavHostController) {
                     navController.navigate(Routes.detail(newPetId))
                 },
                 onSkillClick = { skillIndex ->
+                    Log.d("详细页技能点击后",skillIndex.toString())
                     navController.navigate(Routes.skillDetail(skillIndex))
                 }
             )
