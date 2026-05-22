@@ -1,0 +1,8195 @@
+{
+  "groups": [
+    "两栖组",
+    "动物组",
+    "大地组",
+    "天空组",
+    "妖精组",
+    "巨灵组",
+    "拟人组",
+    "无法孵蛋",
+    "昆虫组",
+    "机械组",
+    "植物组",
+    "海洋组",
+    "软体组",
+    "魔力组",
+    "龙组"
+  ],
+  "group_spirits": {
+    "两栖组": {
+      "desc": "能在陆地和水中生活的精灵",
+      "count": 50,
+      "spirits": [
+        {
+          "name": "板板壳（本来的样子）",
+          "number": "NO.012",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "板板壳（蜕皮时的样子）",
+          "number": "NO.012",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "咔咔壳（本来的样子）",
+          "number": "NO.013",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "咔咔壳（蜕皮时的样子）",
+          "number": "NO.013",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "水泡壳（本来的样子）",
+          "number": "NO.014",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "水泡壳（蜕皮时的样子）",
+          "number": "NO.014",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石肤蜥（本来的样子）",
+          "number": "NO.024",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石肤蜥（球球尾巴的样子）",
+          "number": "NO.024",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石刺蜥（本来的样子）",
+          "number": "NO.025",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石刺蜥（球球尾巴的样子）",
+          "number": "NO.025",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石冠王蜥（本来的样子）",
+          "number": "NO.026",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石冠王蜥（球球尾巴的样子）",
+          "number": "NO.026",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小鼠獭",
+          "number": "NO.036",
+          "element": "普通",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "燕尾獭",
+          "number": "NO.037",
+          "element": "普通",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "卷胡巨獭",
+          "number": "NO.038",
+          "element": "普通",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "丢丢（草地附近的样子）",
+          "number": "NO.044",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "丢丢（沙地附近的样子）",
+          "number": "NO.044",
+          "element": "草",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "丢丢（雪山附近的样子）",
+          "number": "NO.044",
+          "element": "草",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "卡卡虫（草地附近的样子）",
+          "number": "NO.045",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "卡卡虫（沙地附近的样子）",
+          "number": "NO.045",
+          "element": "草",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "卡卡虫（雪山附近的样子）",
+          "number": "NO.045",
+          "element": "草",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "卡瓦重（草地附近的样子）",
+          "number": "NO.046",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "卡瓦重（沙地附近的样子）",
+          "number": "NO.046",
+          "element": "草",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "卡瓦重（雪山附近的样子）",
+          "number": "NO.046",
+          "element": "草",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "乖乖鹄",
+          "number": "NO.088",
+          "element": "翼",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "蓝珠天鹅",
+          "number": "NO.089",
+          "element": "翼",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "翠顶夫人",
+          "number": "NO.090",
+          "element": "翼",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "黑羽夫人",
+          "number": "NO.091",
+          "element": "翼",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "锤头鹳",
+          "number": "NO.092",
+          "element": "翼",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "水滴蛇",
+          "number": "NO.159",
+          "element": "水",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "水蛇锁",
+          "number": "NO.160",
+          "element": "水",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "游蛇魔使",
+          "number": "NO.161",
+          "element": "水",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "波波螺",
+          "number": "NO.171",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "波波螺（被污染的样子）",
+          "number": "NO.171",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "消波螺",
+          "number": "NO.172",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "消波螺（被污染的样子）",
+          "number": "NO.172",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "嗜波螺",
+          "number": "NO.173",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "嗜波螺（被污染的样子）",
+          "number": "NO.173",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "草头鸭",
+          "number": "NO.179",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "卷毛鸭",
+          "number": "NO.180",
+          "element": "草",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "海豹战士",
+          "number": "NO.181",
+          "element": "武",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "海豹船长",
+          "number": "NO.182",
+          "element": "武",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "花怨鳗",
+          "number": "NO.201",
+          "element": "地",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "鳗尾兽",
+          "number": "NO.202",
+          "element": "地",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "古钟蛇（本来的样子）",
+          "number": "NO.212",
+          "element": "萌",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "寒音蛇（本来的样子）",
+          "number": "NO.213",
+          "element": "萌",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "吸泥鸥",
+          "number": "NO.287",
+          "element": "地",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "泥吼牙",
+          "number": "NO.288",
+          "element": "地",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "布瓜蝌",
+          "number": "NO.338",
+          "element": "幻",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "上岸蛙",
+          "number": "NO.339",
+          "element": "幻",
+          "element2": "",
+          "shiny": 0
+        }
+      ]
+    },
+    "动物组": {
+      "desc": "包含各类陆生动物形态的精灵",
+      "count": 85,
+      "spirits": [
+        {
+          "name": "喵喵",
+          "number": "NO.002",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "喵呜",
+          "number": "NO.003",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "魔力猫",
+          "number": "NO.004",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "锥尾羊",
+          "number": "NO.015",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "铃兰羊",
+          "number": "NO.016",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "花影羚羊",
+          "number": "NO.017",
+          "element": "幽",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "小鼠獭",
+          "number": "NO.036",
+          "element": "普通",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "燕尾獭",
+          "number": "NO.037",
+          "element": "普通",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "卷胡巨獭",
+          "number": "NO.038",
+          "element": "普通",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "护主犬",
+          "number": "NO.047",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "音速犬",
+          "number": "NO.048",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "绿耳松鼠",
+          "number": "NO.049",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "抱枕松鼠",
+          "number": "NO.050",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "蹦床松鼠",
+          "number": "NO.051",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "伏地兽",
+          "number": "NO.060",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "贪食鼹",
+          "number": "NO.061",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "巨噬针鼹",
+          "number": "NO.062",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "电咩咩",
+          "number": "NO.066",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "粉咩咩",
+          "number": "NO.067",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "电球咩咩",
+          "number": "NO.068",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小星光（星光能量的样子）",
+          "number": "NO.080",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小星光（月光能量的样子）",
+          "number": "NO.080",
+          "element": "电",
+          "element2": "光",
+          "shiny": 0
+        },
+        {
+          "name": "星光狮（星光能量的样子）",
+          "number": "NO.081",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "星光狮（月光能量的样子）",
+          "number": "NO.081",
+          "element": "电",
+          "element2": "光",
+          "shiny": 0
+        },
+        {
+          "name": "小独角兽",
+          "number": "NO.116",
+          "element": "光",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "白金独角兽",
+          "number": "NO.117",
+          "element": "光",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小黑猫",
+          "number": "NO.121",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "黑猫巫师",
+          "number": "NO.122",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "忽幽狸",
+          "number": "NO.123",
+          "element": "幽",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "影狸",
+          "number": "NO.124",
+          "element": "幽",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "恶魔狼",
+          "number": "NO.131",
+          "element": "恶",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "呼呼猪",
+          "number": "NO.137",
+          "element": "冰",
+          "element2": "地",
+          "shiny": 1
+        },
+        {
+          "name": "獠牙猪",
+          "number": "NO.138",
+          "element": "冰",
+          "element2": "地",
+          "shiny": 1
+        },
+        {
+          "name": "灵狐",
+          "number": "NO.147",
+          "element": "火",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "九尾狐",
+          "number": "NO.148",
+          "element": "火",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "尖嘴狐仙",
+          "number": "NO.149",
+          "element": "火",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "松仔",
+          "number": "NO.153",
+          "element": "草",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "松叶羊",
+          "number": "NO.154",
+          "element": "草",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "针叶巡林",
+          "number": "NO.155",
+          "element": "草",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "小勇狮",
+          "number": "NO.156",
+          "element": "火",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "炽焰狮",
+          "number": "NO.157",
+          "element": "火",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "炽心勇狮",
+          "number": "NO.158",
+          "element": "火",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "小怂猫",
+          "number": "NO.163",
+          "element": "武",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "怒目怂猫",
+          "number": "NO.164",
+          "element": "武",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小狮鹫（崖间地的样子）",
+          "number": "NO.165",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小狮鹫（高山地的样子）",
+          "number": "NO.165",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "神圣狮鹫（崖间地的样子）",
+          "number": "NO.166",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "神圣狮鹫（高山地的样子）",
+          "number": "NO.166",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "皇家狮鹫（崖间地的样子）",
+          "number": "NO.167",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "皇家狮鹫（高山地的样子）",
+          "number": "NO.167",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "海豹战士",
+          "number": "NO.181",
+          "element": "武",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "海豹船长",
+          "number": "NO.182",
+          "element": "武",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "奔波鼠",
+          "number": "NO.193",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "流浪鼠",
+          "number": "NO.194",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "呆小路",
+          "number": "NO.195",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "舞动路路",
+          "number": "NO.196",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "白发路路",
+          "number": "NO.197",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "逗逗",
+          "number": "NO.198",
+          "element": "萌",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "气球猫",
+          "number": "NO.199",
+          "element": "萌",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "梦想三三",
+          "number": "NO.200",
+          "element": "萌",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "古钟蛇（本来的样子）",
+          "number": "NO.212",
+          "element": "萌",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "寒音蛇（本来的样子）",
+          "number": "NO.213",
+          "element": "萌",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "电动长颈鹿",
+          "number": "NO.226",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "奔乐鹿",
+          "number": "NO.227",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "爵士鹿",
+          "number": "NO.228",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "裘洛",
+          "number": "NO.246",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "裘力",
+          "number": "NO.247",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "裘卡",
+          "number": "NO.248",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "治愈兔",
+          "number": "NO.255",
+          "element": "火",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "红丝绒",
+          "number": "NO.256",
+          "element": "火",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "红绒十字",
+          "number": "NO.257",
+          "element": "火",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "优优",
+          "number": "NO.270",
+          "element": "地",
+          "element2": "光",
+          "shiny": 0
+        },
+        {
+          "name": "绒光优优",
+          "number": "NO.271",
+          "element": "地",
+          "element2": "光",
+          "shiny": 0
+        },
+        {
+          "name": "地鼠（枯水期的样子）",
+          "number": "NO.277",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "地鼠（储水期的样子）",
+          "number": "NO.277",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "遁鼠（枯水期的样子）",
+          "number": "NO.278",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "遁鼠（储水期的样子）",
+          "number": "NO.278",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "遁地鼠（枯水期的样子）",
+          "number": "NO.279",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "遁地鼠（储水期的样子）",
+          "number": "NO.279",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "月牙雪熊",
+          "number": "NO.322",
+          "element": "冰",
+          "element2": "幻",
+          "shiny": 1
+        },
+        {
+          "name": "火红尾",
+          "number": "NO.340",
+          "element": "火",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "雅丹鬃",
+          "number": "NO.341",
+          "element": "火",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "春团",
+          "number": "NO.342",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "春兔",
+          "number": "NO.343",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "春花兔",
+          "number": "NO.344",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        }
+      ]
+    },
+    "大地组": {
+      "desc": "与岩石矿物相关的精灵",
+      "count": 33,
+      "spirits": [
+        {
+          "name": "石肤蜥（本来的样子）",
+          "number": "NO.024",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石肤蜥（球球尾巴的样子）",
+          "number": "NO.024",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石刺蜥（本来的样子）",
+          "number": "NO.025",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石刺蜥（球球尾巴的样子）",
+          "number": "NO.025",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石冠王蜥（本来的样子）",
+          "number": "NO.026",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石冠王蜥（球球尾巴的样子）",
+          "number": "NO.026",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "布是石",
+          "number": "NO.027",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "布是岩",
+          "number": "NO.028",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "布克棱岩",
+          "number": "NO.029",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "矿晶虫",
+          "number": "NO.039",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（西瓜碧玺的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（莲花刚玉的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（星彩榴石的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（火山琉璃的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（蓝锥矿的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（烧蓝黄金的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "嘟嘟煲",
+          "number": "NO.052",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "嘟嘟锅",
+          "number": "NO.053",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "记忆石",
+          "number": "NO.095",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "阿米亚特",
+          "number": "NO.105",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "阿米樱",
+          "number": "NO.106",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "罗隐",
+          "number": "NO.107",
+          "element": "地",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "石石",
+          "number": "NO.111",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "巨灵石",
+          "number": "NO.112",
+          "element": "地",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "仪使者",
+          "number": "NO.113",
+          "element": "地",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "仪式之星",
+          "number": "NO.114",
+          "element": "地",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "仪式巨像",
+          "number": "NO.115",
+          "element": "地",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "波波螺",
+          "number": "NO.171",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "波波螺（被污染的样子）",
+          "number": "NO.171",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "消波螺",
+          "number": "NO.172",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "消波螺（被污染的样子）",
+          "number": "NO.172",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "嗜波螺",
+          "number": "NO.173",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "嗜波螺（被污染的样子）",
+          "number": "NO.173",
+          "element": "地",
+          "element2": "水",
+          "shiny": 0
+        }
+      ]
+    },
+    "天空组": {
+      "desc": "拥有翅膀或能飞行的精灵",
+      "count": 70,
+      "spirits": [
+        {
+          "name": "鸭吉吉（蓬松的样子）",
+          "number": "NO.011",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "鸭吉吉（紧实的样子）",
+          "number": "NO.011",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "鸭吉吉（等一等鸭）",
+          "number": "NO.011",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "鸭吉吉（起来鸭）",
+          "number": "NO.011",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "鸭吉吉（燃了鸭）",
+          "number": "NO.011",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪绒鸟（本来的样子）",
+          "number": "NO.018",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪绒鸟（春天的样子）",
+          "number": "NO.018",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪绒鸟（夏天的样子）",
+          "number": "NO.018",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪绒鸟（秋天的样子）",
+          "number": "NO.018",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "冬羽雀（本来的样子）",
+          "number": "NO.019",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "冬羽雀（春天的样子）",
+          "number": "NO.019",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "冬羽雀（夏天的样子）",
+          "number": "NO.019",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "冬羽雀（秋天的样子）",
+          "number": "NO.019",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "岚鸟（本来的样子）",
+          "number": "NO.020",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "岚鸟（春天的样子）",
+          "number": "NO.020",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "岚鸟（夏天的样子）",
+          "number": "NO.020",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "岚鸟（秋天的样子）",
+          "number": "NO.020",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "蒲公英",
+          "number": "NO.069",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "蒲公英娃娃",
+          "number": "NO.070",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "一窝蜂",
+          "number": "NO.082",
+          "element": "虫",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "黄蜂后",
+          "number": "NO.083",
+          "element": "虫",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "花魁蜂后",
+          "number": "NO.084",
+          "element": "虫",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "乖乖鹄",
+          "number": "NO.088",
+          "element": "翼",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "蓝珠天鹅",
+          "number": "NO.089",
+          "element": "翼",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "翠顶夫人",
+          "number": "NO.090",
+          "element": "翼",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "黑羽夫人",
+          "number": "NO.091",
+          "element": "翼",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "锤头鹳",
+          "number": "NO.092",
+          "element": "翼",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "咔咔羽毛",
+          "number": "NO.096",
+          "element": "翼",
+          "element2": "普通",
+          "shiny": 0
+        },
+        {
+          "name": "咔咔雀",
+          "number": "NO.097",
+          "element": "翼",
+          "element2": "普通",
+          "shiny": 0
+        },
+        {
+          "name": "咔咔鸟",
+          "number": "NO.098",
+          "element": "翼",
+          "element2": "普通",
+          "shiny": 0
+        },
+        {
+          "name": "绿翼鸟",
+          "number": "NO.102",
+          "element": "萌",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "魔翼鸟",
+          "number": "NO.103",
+          "element": "萌",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "魔眷鸟",
+          "number": "NO.104",
+          "element": "萌",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "风铃鲨",
+          "number": "NO.108",
+          "element": "水",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "蓝蝶鲨",
+          "number": "NO.109",
+          "element": "水",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "彩蝶鲨",
+          "number": "NO.110",
+          "element": "水",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "小电企鹅",
+          "number": "NO.132",
+          "element": "冰",
+          "element2": "电",
+          "shiny": 0
+        },
+        {
+          "name": "电企鹅",
+          "number": "NO.133",
+          "element": "冰",
+          "element2": "电",
+          "shiny": 0
+        },
+        {
+          "name": "公平鸽",
+          "number": "NO.162",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小狮鹫（崖间地的样子）",
+          "number": "NO.165",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小狮鹫（高山地的样子）",
+          "number": "NO.165",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "神圣狮鹫（崖间地的样子）",
+          "number": "NO.166",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "神圣狮鹫（高山地的样子）",
+          "number": "NO.166",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "皇家狮鹫（崖间地的样子）",
+          "number": "NO.167",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "皇家狮鹫（高山地的样子）",
+          "number": "NO.167",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "斑斑",
+          "number": "NO.177",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "斑枭",
+          "number": "NO.178",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "草头鸭",
+          "number": "NO.179",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "卷毛鸭",
+          "number": "NO.180",
+          "element": "草",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "小翼龙",
+          "number": "NO.224",
+          "element": "龙",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "翼龙",
+          "number": "NO.225",
+          "element": "龙",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "小鹬",
+          "number": "NO.231",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "鄙目鹬",
+          "number": "NO.232",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "高脚鹬",
+          "number": "NO.233",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "螺旋帕帕",
+          "number": "NO.261",
+          "element": "机械",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "帕帕斯卡",
+          "number": "NO.262",
+          "element": "机械",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "可立鸡",
+          "number": "NO.266",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "晕晕鸡",
+          "number": "NO.267",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "绅士鸡",
+          "number": "NO.268",
+          "element": "火",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "武者鸡",
+          "number": "NO.269",
+          "element": "火",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "噼啪鸟",
+          "number": "NO.272",
+          "element": "电",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "小甲虫",
+          "number": "NO.283",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "铠甲虫",
+          "number": "NO.284",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "吸泥鸥",
+          "number": "NO.287",
+          "element": "地",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "泥吼牙",
+          "number": "NO.288",
+          "element": "地",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "厉毒小萝",
+          "number": "NO.291",
+          "element": "毒",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "厉毒修萝",
+          "number": "NO.292",
+          "element": "毒",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "粉星仔",
+          "number": "NO.335",
+          "element": "幻",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "粉耳星兔",
+          "number": "NO.336",
+          "element": "幻",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "落陨星兔",
+          "number": "NO.337",
+          "element": "幻",
+          "element2": "幽",
+          "shiny": 1
+        }
+      ]
+    },
+    "妖精组": {
+      "desc": "可爱梦幻的妖精型精灵",
+      "count": 80,
+      "spirits": [
+        {
+          "name": "恶魔叮",
+          "number": "NO.030",
+          "element": "恶",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "叮叮恶魔",
+          "number": "NO.031",
+          "element": "恶",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "幽影树",
+          "number": "NO.035",
+          "element": "幽",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "嘟嘟煲",
+          "number": "NO.052",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "嘟嘟锅",
+          "number": "NO.053",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "梦游（穿旧睡衣的样子）",
+          "number": "NO.057",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "梦悠悠（穿旧睡衣的样子）",
+          "number": "NO.058",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小夜",
+          "number": "NO.085",
+          "element": "恶",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "紫夜",
+          "number": "NO.086",
+          "element": "恶",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "朔夜伊芙",
+          "number": "NO.087",
+          "element": "恶",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "绿草精灵",
+          "number": "NO.093",
+          "element": "草",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "魔草巫灵",
+          "number": "NO.094",
+          "element": "草",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "绿翼鸟",
+          "number": "NO.102",
+          "element": "萌",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "魔翼鸟",
+          "number": "NO.103",
+          "element": "萌",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "魔眷鸟",
+          "number": "NO.104",
+          "element": "萌",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "仪使者",
+          "number": "NO.113",
+          "element": "地",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "仪式之星",
+          "number": "NO.114",
+          "element": "地",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "仪式巨像",
+          "number": "NO.115",
+          "element": "地",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "小黑猫",
+          "number": "NO.121",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "黑猫巫师",
+          "number": "NO.122",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪娃娃",
+          "number": "NO.139",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "冰封怨灵",
+          "number": "NO.140",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪灵",
+          "number": "NO.141",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "大耳帽兜",
+          "number": "NO.142",
+          "element": "冰",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "帽兜娃娃",
+          "number": "NO.143",
+          "element": "冰",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "雪影娃娃",
+          "number": "NO.144",
+          "element": "冰",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "水滴蛇",
+          "number": "NO.159",
+          "element": "水",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "水蛇锁",
+          "number": "NO.160",
+          "element": "水",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "游蛇魔使",
+          "number": "NO.161",
+          "element": "水",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "号儿鱼",
+          "number": "NO.183",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圆号鱼",
+          "number": "NO.184",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "甜田螺",
+          "number": "NO.185",
+          "element": "水",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "壳乙螺",
+          "number": "NO.186",
+          "element": "水",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "卡洛儿",
+          "number": "NO.187",
+          "element": "水",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "棋棋（白子）",
+          "number": "NO.188",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "棋棋（黑子）",
+          "number": "NO.188",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "棋骑士（白子）",
+          "number": "NO.189",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "棋骑士（黑子）",
+          "number": "NO.189",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "棋齐垒（白子）",
+          "number": "NO.190",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "棋齐垒（黑子）",
+          "number": "NO.190",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "棋祈督（白子）",
+          "number": "NO.191",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "棋祈督（黑子）",
+          "number": "NO.191",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "棋绮后（白子）",
+          "number": "NO.192",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "棋绮后（黑子）",
+          "number": "NO.192",
+          "element": "武",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "拉特",
+          "number": "NO.205",
+          "element": "电",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "酷拉",
+          "number": "NO.206",
+          "element": "电",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "小箱怪",
+          "number": "NO.210",
+          "element": "机械",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "迷迷箱怪",
+          "number": "NO.211",
+          "element": "机械",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "里拉鳐",
+          "number": "NO.219",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "裘洛",
+          "number": "NO.246",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "裘力",
+          "number": "NO.247",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "裘卡",
+          "number": "NO.248",
+          "element": "毒",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "治愈兔",
+          "number": "NO.255",
+          "element": "火",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "红丝绒",
+          "number": "NO.256",
+          "element": "火",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "红绒十字",
+          "number": "NO.257",
+          "element": "火",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "格兰种子",
+          "number": "NO.274",
+          "element": "草",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "格兰花",
+          "number": "NO.275",
+          "element": "草",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "格兰球",
+          "number": "NO.276",
+          "element": "草",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "毛头小蛛",
+          "number": "NO.296",
+          "element": "虫",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "捕尘长绒",
+          "number": "NO.297",
+          "element": "虫",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "食尘短绒",
+          "number": "NO.298",
+          "element": "虫",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "画精灵",
+          "number": "NO.299",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "画像守护",
+          "number": "NO.300",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "画间法师手",
+          "number": "NO.301",
+          "element": "普通",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "画间沉铁兽",
+          "number": "NO.302",
+          "element": "普通",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "书魔虫",
+          "number": "NO.303",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "书卷守护",
+          "number": "NO.304",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "古卷执政官",
+          "number": "NO.305",
+          "element": "普通",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "古卷匣魔像",
+          "number": "NO.306",
+          "element": "普通",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "粉粉星",
+          "number": "NO.330",
+          "element": "电",
+          "element2": "幻",
+          "shiny": 1
+        },
+        {
+          "name": "小皮球",
+          "number": "NO.331",
+          "element": "电",
+          "element2": "幻",
+          "shiny": 1
+        },
+        {
+          "name": "粉星仔",
+          "number": "NO.335",
+          "element": "幻",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "粉耳星兔",
+          "number": "NO.336",
+          "element": "幻",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "落陨星兔",
+          "number": "NO.337",
+          "element": "幻",
+          "element2": "幽",
+          "shiny": 1
+        },
+        {
+          "name": "春团",
+          "number": "NO.342",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "春兔",
+          "number": "NO.343",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "春花兔",
+          "number": "NO.344",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "幽星光",
+          "number": "NO.345",
+          "element": "幻",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "曜星光",
+          "number": "NO.346",
+          "element": "幻",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "暮星辰",
+          "number": "NO.347",
+          "element": "幻",
+          "element2": "翼",
+          "shiny": 0
+        }
+      ]
+    },
+    "巨灵组": {
+      "desc": "体型庞大或外形奇特的巨兽型精灵",
+      "count": 64,
+      "spirits": [
+        {
+          "name": "火花",
+          "number": "NO.005",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "焰火",
+          "number": "NO.006",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "火神",
+          "number": "NO.007",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "布是石",
+          "number": "NO.027",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "布是岩",
+          "number": "NO.028",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "布克棱岩",
+          "number": "NO.029",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "白发懒人",
+          "number": "NO.073",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "动力猿",
+          "number": "NO.074",
+          "element": "普通",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "瞌睡王",
+          "number": "NO.075",
+          "element": "普通",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "海盔虫（本来的样子）",
+          "number": "NO.076",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "海盔虫（磨损的样子）",
+          "number": "NO.076",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "刺盔虫（本来的样子）",
+          "number": "NO.077",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "刺盔虫（磨损的样子）",
+          "number": "NO.077",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "千棘盔（本来的样子）",
+          "number": "NO.078",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "千棘盔（磨损的样子）",
+          "number": "NO.078",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "阿米亚特",
+          "number": "NO.105",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "阿米樱",
+          "number": "NO.106",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "罗隐",
+          "number": "NO.107",
+          "element": "地",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "小独角兽",
+          "number": "NO.116",
+          "element": "光",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "白金独角兽",
+          "number": "NO.117",
+          "element": "光",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪豆丁",
+          "number": "NO.134",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪蛮人",
+          "number": "NO.135",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪巨人",
+          "number": "NO.136",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "逗逗",
+          "number": "NO.198",
+          "element": "萌",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "气球猫",
+          "number": "NO.199",
+          "element": "萌",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "梦想三三",
+          "number": "NO.200",
+          "element": "萌",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "矮脚爬爬",
+          "number": "NO.214",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "恶魔红钻",
+          "number": "NO.215",
+          "element": "虫",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "火尾瓦特",
+          "number": "NO.216",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "火尾战士",
+          "number": "NO.217",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "烈火守护",
+          "number": "NO.218",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "多西",
+          "number": "NO.221",
+          "element": "机械",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "库多西",
+          "number": "NO.222",
+          "element": "机械",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "波多西",
+          "number": "NO.223",
+          "element": "机械",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "可爱猿",
+          "number": "NO.249",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "炽热猿",
+          "number": "NO.250",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "火焰猿",
+          "number": "NO.251",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "乌达（极昼的样子）",
+          "number": "NO.258",
+          "element": "恶",
+          "element2": "火",
+          "shiny": 0
+        },
+        {
+          "name": "乌达（极夜的样子）",
+          "number": "NO.258",
+          "element": "恶",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "迷你乌（极昼的样子）",
+          "number": "NO.259",
+          "element": "恶",
+          "element2": "火",
+          "shiny": 0
+        },
+        {
+          "name": "迷你乌（极夜的样子）",
+          "number": "NO.259",
+          "element": "恶",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "乌拉塔（极昼的样子）",
+          "number": "NO.260",
+          "element": "恶",
+          "element2": "火",
+          "shiny": 0
+        },
+        {
+          "name": "乌拉塔（极夜的样子）",
+          "number": "NO.260",
+          "element": "恶",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "噼啪鸟",
+          "number": "NO.272",
+          "element": "电",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "深蓝鲸",
+          "number": "NO.273",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣剑侍从",
+          "number": "NO.285",
+          "element": "机械",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣剑-X",
+          "number": "NO.286",
+          "element": "机械",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "大头骨龙",
+          "number": "NO.289",
+          "element": "龙",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "寂灭骨龙",
+          "number": "NO.290",
+          "element": "龙",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "画精灵",
+          "number": "NO.299",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "画像守护",
+          "number": "NO.300",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "画间法师手",
+          "number": "NO.301",
+          "element": "普通",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "画间沉铁兽",
+          "number": "NO.302",
+          "element": "普通",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "书魔虫",
+          "number": "NO.303",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "书卷守护",
+          "number": "NO.304",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "古卷执政官",
+          "number": "NO.305",
+          "element": "普通",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "古卷匣魔像",
+          "number": "NO.306",
+          "element": "普通",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "月牙雪熊",
+          "number": "NO.322",
+          "element": "冰",
+          "element2": "幻",
+          "shiny": 1
+        },
+        {
+          "name": "空空颅",
+          "number": "NO.327",
+          "element": "幽",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "夜宿颅",
+          "number": "NO.328",
+          "element": "幽",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "夜枭",
+          "number": "NO.329",
+          "element": "幽",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "幽星光",
+          "number": "NO.345",
+          "element": "幻",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "曜星光",
+          "number": "NO.346",
+          "element": "幻",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "暮星辰",
+          "number": "NO.347",
+          "element": "幻",
+          "element2": "翼",
+          "shiny": 0
+        }
+      ]
+    },
+    "拟人组": {
+      "desc": "拥有类人体态的精灵",
+      "count": 44,
+      "spirits": [
+        {
+          "name": "喵喵",
+          "number": "NO.002",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "喵呜",
+          "number": "NO.003",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "魔力猫",
+          "number": "NO.004",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "白发懒人",
+          "number": "NO.073",
+          "element": "普通",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "动力猿",
+          "number": "NO.074",
+          "element": "普通",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "瞌睡王",
+          "number": "NO.075",
+          "element": "普通",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "小夜",
+          "number": "NO.085",
+          "element": "恶",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "紫夜",
+          "number": "NO.086",
+          "element": "恶",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "朔夜伊芙",
+          "number": "NO.087",
+          "element": "恶",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "绿草精灵",
+          "number": "NO.093",
+          "element": "草",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "魔草巫灵",
+          "number": "NO.094",
+          "element": "草",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "小草虫",
+          "number": "NO.099",
+          "element": "虫",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "草衣虫",
+          "number": "NO.100",
+          "element": "虫",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "花衣蝶",
+          "number": "NO.101",
+          "element": "虫",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "忽幽狸",
+          "number": "NO.123",
+          "element": "幽",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "影狸",
+          "number": "NO.124",
+          "element": "幽",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "多多",
+          "number": "NO.125",
+          "element": "毒",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "多啦多",
+          "number": "NO.126",
+          "element": "毒",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "古啦多",
+          "number": "NO.127",
+          "element": "毒",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "雪豆丁",
+          "number": "NO.134",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪蛮人",
+          "number": "NO.135",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪巨人",
+          "number": "NO.136",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "大耳帽兜",
+          "number": "NO.142",
+          "element": "冰",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "帽兜娃娃",
+          "number": "NO.143",
+          "element": "冰",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "雪影娃娃",
+          "number": "NO.144",
+          "element": "冰",
+          "element2": "萌",
+          "shiny": 1
+        },
+        {
+          "name": "小怂猫",
+          "number": "NO.163",
+          "element": "武",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "怒目怂猫",
+          "number": "NO.164",
+          "element": "武",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "奔波鼠",
+          "number": "NO.193",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "流浪鼠",
+          "number": "NO.194",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "呆小路",
+          "number": "NO.195",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "舞动路路",
+          "number": "NO.196",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "白发路路",
+          "number": "NO.197",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "可爱猿",
+          "number": "NO.249",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "炽热猿",
+          "number": "NO.250",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "火焰猿",
+          "number": "NO.251",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "机械方方",
+          "number": "NO.263",
+          "element": "机械",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "多彩方方",
+          "number": "NO.264",
+          "element": "机械",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "立方人",
+          "number": "NO.265",
+          "element": "机械",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "可立鸡",
+          "number": "NO.266",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "晕晕鸡",
+          "number": "NO.267",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "绅士鸡",
+          "number": "NO.268",
+          "element": "火",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "武者鸡",
+          "number": "NO.269",
+          "element": "火",
+          "element2": "武",
+          "shiny": 0
+        },
+        {
+          "name": "厉毒小萝",
+          "number": "NO.291",
+          "element": "毒",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "厉毒修萝",
+          "number": "NO.292",
+          "element": "毒",
+          "element2": "恶",
+          "shiny": 0
+        }
+      ]
+    },
+    "无法孵蛋": {
+      "desc": "特殊精灵，无法通过孵蛋获得",
+      "count": 13,
+      "spirits": [
+        {
+          "name": "迪莫",
+          "number": "NO.001",
+          "element": "光",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "里奥",
+          "number": "NO.150",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "灵羽勇士",
+          "number": "NO.151",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣羽翼王",
+          "number": "NO.152",
+          "element": "翼",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小帕尔",
+          "number": "NO.293",
+          "element": "恶",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "帕尔萨斯",
+          "number": "NO.294",
+          "element": "恶",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "龙息帕尔",
+          "number": "NO.295",
+          "element": "恶",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "绒绒",
+          "number": "NO.307",
+          "element": "光",
+          "element2": "虫",
+          "shiny": 1
+        },
+        {
+          "name": "小绒茧",
+          "number": "NO.308",
+          "element": "光",
+          "element2": "虫",
+          "shiny": 1
+        },
+        {
+          "name": "绒仙子",
+          "number": "NO.309",
+          "element": "光",
+          "element2": "虫",
+          "shiny": 1
+        },
+        {
+          "name": "犀角鸟",
+          "number": "NO.310",
+          "element": "光",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "光纤兽",
+          "number": "NO.311",
+          "element": "光",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "疾光千兽",
+          "number": "NO.312",
+          "element": "光",
+          "element2": "",
+          "shiny": 1
+        }
+      ]
+    },
+    "昆虫组": {
+      "desc": "以昆虫为原型的精灵",
+      "count": 32,
+      "spirits": [
+        {
+          "name": "毛毛",
+          "number": "NO.032",
+          "element": "虫",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "爬爬",
+          "number": "NO.033",
+          "element": "虫",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "化蝶（平常的样子）",
+          "number": "NO.034",
+          "element": "虫",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "一窝蜂",
+          "number": "NO.082",
+          "element": "虫",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "黄蜂后",
+          "number": "NO.083",
+          "element": "虫",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "花魁蜂后",
+          "number": "NO.084",
+          "element": "虫",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "小草虫",
+          "number": "NO.099",
+          "element": "虫",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "草衣虫",
+          "number": "NO.100",
+          "element": "虫",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "花衣蝶",
+          "number": "NO.101",
+          "element": "虫",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "旋叶虫（金黄的样子）",
+          "number": "NO.118",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "旋叶虫（枯叶的样子）",
+          "number": "NO.118",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "蓬叶虫（金黄的样子）",
+          "number": "NO.119",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "蓬叶虫（枯叶的样子）",
+          "number": "NO.119",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "风滚暮虫（金黄的样子）",
+          "number": "NO.120",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "风滚暮虫（枯叶的样子）",
+          "number": "NO.120",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "圆眼蜘蛛",
+          "number": "NO.168",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "尖角蜘蛛",
+          "number": "NO.169",
+          "element": "虫",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "芋香巨角蛛",
+          "number": "NO.170",
+          "element": "虫",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "矮脚爬爬",
+          "number": "NO.214",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "恶魔红钻",
+          "number": "NO.215",
+          "element": "虫",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "小甲虫",
+          "number": "NO.283",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "铠甲虫",
+          "number": "NO.284",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "毛头小蛛",
+          "number": "NO.296",
+          "element": "虫",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "捕尘长绒",
+          "number": "NO.297",
+          "element": "虫",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "食尘短绒",
+          "number": "NO.298",
+          "element": "虫",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "星尘虫",
+          "number": "NO.317",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "落星虫",
+          "number": "NO.318",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "陨星虫",
+          "number": "NO.319",
+          "element": "虫",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "嗜光嗡嗡",
+          "number": "NO.323",
+          "element": "恶",
+          "element2": "光",
+          "shiny": 1
+        },
+        {
+          "name": "窃光蚊",
+          "number": "NO.324",
+          "element": "恶",
+          "element2": "光",
+          "shiny": 1
+        },
+        {
+          "name": "柴渣虫",
+          "number": "NO.325",
+          "element": "火",
+          "element2": "草",
+          "shiny": 1
+        },
+        {
+          "name": "燃薪虫",
+          "number": "NO.326",
+          "element": "火",
+          "element2": "草",
+          "shiny": 1
+        }
+      ]
+    },
+    "机械组": {
+      "desc": "由机械构成的精灵",
+      "count": 19,
+      "spirits": [
+        {
+          "name": "权杖-Ⅱ",
+          "number": "NO.145",
+          "element": "机械",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "权杖-Ⅴ",
+          "number": "NO.146",
+          "element": "机械",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小箱怪",
+          "number": "NO.210",
+          "element": "机械",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "迷迷箱怪",
+          "number": "NO.211",
+          "element": "机械",
+          "element2": "幻",
+          "shiny": 0
+        },
+        {
+          "name": "多西",
+          "number": "NO.221",
+          "element": "机械",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "库多西",
+          "number": "NO.222",
+          "element": "机械",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "波多西",
+          "number": "NO.223",
+          "element": "机械",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "缇塔",
+          "number": "NO.229",
+          "element": "机械",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "声波缇塔",
+          "number": "NO.230",
+          "element": "机械",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "螺旋帕帕",
+          "number": "NO.261",
+          "element": "机械",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "帕帕斯卡",
+          "number": "NO.262",
+          "element": "机械",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "机械方方",
+          "number": "NO.263",
+          "element": "机械",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "多彩方方",
+          "number": "NO.264",
+          "element": "机械",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "立方人",
+          "number": "NO.265",
+          "element": "机械",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "圣剑侍从",
+          "number": "NO.285",
+          "element": "机械",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣剑-X",
+          "number": "NO.286",
+          "element": "机械",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "贝瑟",
+          "number": "NO.332",
+          "element": "机械",
+          "element2": "火",
+          "shiny": 1
+        },
+        {
+          "name": "贝加尔",
+          "number": "NO.333",
+          "element": "机械",
+          "element2": "火",
+          "shiny": 1
+        },
+        {
+          "name": "贝古斯",
+          "number": "NO.334",
+          "element": "机械",
+          "element2": "火",
+          "shiny": 1
+        }
+      ]
+    },
+    "植物组": {
+      "desc": "以植物为原型的精灵",
+      "count": 46,
+      "spirits": [
+        {
+          "name": "小灵菇",
+          "number": "NO.021",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "幻灵菇",
+          "number": "NO.022",
+          "element": "幽",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "幻影灵菇",
+          "number": "NO.023",
+          "element": "幽",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "幽影树",
+          "number": "NO.035",
+          "element": "幽",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "奇丽草",
+          "number": "NO.041",
+          "element": "草",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "奇丽叶",
+          "number": "NO.042",
+          "element": "草",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "奇丽花",
+          "number": "NO.043",
+          "element": "草",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "兽花蕾",
+          "number": "NO.059",
+          "element": "光",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦种子（海神球形态）",
+          "number": "NO.063",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦种子（彩玉球形态）",
+          "number": "NO.063",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦种子（短毛球形态）",
+          "number": "NO.063",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦种子（象牙球形态）",
+          "number": "NO.063",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦草（海神球形态）",
+          "number": "NO.064",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦草（彩玉球形态）",
+          "number": "NO.064",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦草（短毛球形态）",
+          "number": "NO.064",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦草（象牙球形态）",
+          "number": "NO.064",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦花（海神球形态）",
+          "number": "NO.065",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦花（彩玉球形态）",
+          "number": "NO.065",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦花（短毛球形态）",
+          "number": "NO.065",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蹦蹦花（象牙球形态）",
+          "number": "NO.065",
+          "element": "草",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "蒲公英",
+          "number": "NO.069",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "蒲公英娃娃",
+          "number": "NO.070",
+          "element": "草",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "伊贝儿",
+          "number": "NO.071",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "伊贝粉粉",
+          "number": "NO.072",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "菊花梨",
+          "number": "NO.079",
+          "element": "萌",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "旋叶虫（金黄的样子）",
+          "number": "NO.118",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "旋叶虫（枯叶的样子）",
+          "number": "NO.118",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "蓬叶虫（金黄的样子）",
+          "number": "NO.119",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "蓬叶虫（枯叶的样子）",
+          "number": "NO.119",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "风滚暮虫（金黄的样子）",
+          "number": "NO.120",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "风滚暮虫（枯叶的样子）",
+          "number": "NO.120",
+          "element": "普通",
+          "element2": "虫",
+          "shiny": 0
+        },
+        {
+          "name": "哭哭菇",
+          "number": "NO.128",
+          "element": "幻",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "怖须菇",
+          "number": "NO.129",
+          "element": "幻",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "怖哭菇",
+          "number": "NO.130",
+          "element": "幻",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "菇菇丁",
+          "number": "NO.174",
+          "element": "地",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "多菇丁",
+          "number": "NO.175",
+          "element": "地",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "九幽菇",
+          "number": "NO.176",
+          "element": "地",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "海枝枝（碧蓝珊瑚）",
+          "number": "NO.220",
+          "element": "水",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "海枝枝（杏黄百合）",
+          "number": "NO.220",
+          "element": "水",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "海枝枝（洋红沙丁）",
+          "number": "NO.220",
+          "element": "水",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "海枝枝（翠绿纶布）",
+          "number": "NO.220",
+          "element": "水",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "格兰种子",
+          "number": "NO.274",
+          "element": "草",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "格兰花",
+          "number": "NO.275",
+          "element": "草",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "格兰球",
+          "number": "NO.276",
+          "element": "草",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "柴渣虫",
+          "number": "NO.325",
+          "element": "火",
+          "element2": "草",
+          "shiny": 1
+        },
+        {
+          "name": "燃薪虫",
+          "number": "NO.326",
+          "element": "火",
+          "element2": "草",
+          "shiny": 1
+        }
+      ]
+    },
+    "海洋组": {
+      "desc": "主要生活在海洋中的精灵",
+      "count": 42,
+      "spirits": [
+        {
+          "name": "海盔虫（本来的样子）",
+          "number": "NO.076",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "海盔虫（磨损的样子）",
+          "number": "NO.076",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "刺盔虫（本来的样子）",
+          "number": "NO.077",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "刺盔虫（磨损的样子）",
+          "number": "NO.077",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "千棘盔（本来的样子）",
+          "number": "NO.078",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "千棘盔（磨损的样子）",
+          "number": "NO.078",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "风铃鲨",
+          "number": "NO.108",
+          "element": "水",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "蓝蝶鲨",
+          "number": "NO.109",
+          "element": "水",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "彩蝶鲨",
+          "number": "NO.110",
+          "element": "水",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "号儿鱼",
+          "number": "NO.183",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圆号鱼",
+          "number": "NO.184",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "花怨鳗",
+          "number": "NO.201",
+          "element": "地",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "鳗尾兽",
+          "number": "NO.202",
+          "element": "地",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "里拉鳐",
+          "number": "NO.219",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "海枝枝（碧蓝珊瑚）",
+          "number": "NO.220",
+          "element": "水",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "海枝枝（杏黄百合）",
+          "number": "NO.220",
+          "element": "水",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "海枝枝（洋红沙丁）",
+          "number": "NO.220",
+          "element": "水",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "海枝枝（翠绿纶布）",
+          "number": "NO.220",
+          "element": "水",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "刺轮砣（上弦的样子）",
+          "number": "NO.237",
+          "element": "毒",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "刺轮砣（下弦的样子）",
+          "number": "NO.237",
+          "element": "毒",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "月亮砣（上弦的样子）",
+          "number": "NO.238",
+          "element": "毒",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "月亮砣（下弦的样子）",
+          "number": "NO.238",
+          "element": "毒",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "豆丁鱼",
+          "number": "NO.239",
+          "element": "水",
+          "element2": "龙",
+          "shiny": 0
+        },
+        {
+          "name": "快鳍鱼",
+          "number": "NO.240",
+          "element": "水",
+          "element2": "龙",
+          "shiny": 0
+        },
+        {
+          "name": "龙鱼",
+          "number": "NO.241",
+          "element": "水",
+          "element2": "龙",
+          "shiny": 0
+        },
+        {
+          "name": "胆小鳗鱼",
+          "number": "NO.242",
+          "element": "电",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "闪电鳗鱼",
+          "number": "NO.243",
+          "element": "电",
+          "element2": "水",
+          "shiny": 0
+        },
+        {
+          "name": "翡翠水母",
+          "number": "NO.244",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "琉璃水母",
+          "number": "NO.245",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "布鲁斯",
+          "number": "NO.252",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪顶布鲁斯",
+          "number": "NO.253",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "冰钻布鲁斯",
+          "number": "NO.254",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "深蓝鲸",
+          "number": "NO.273",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "墨鱿士",
+          "number": "NO.280",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "混乱鱿彩",
+          "number": "NO.281",
+          "element": "幽",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "秩序鱿墨",
+          "number": "NO.282",
+          "element": "幽",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "果冻",
+          "number": "NO.313",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "抹茶布丁",
+          "number": "NO.314",
+          "element": "水",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "椰浆布丁",
+          "number": "NO.315",
+          "element": "水",
+          "element2": "冰",
+          "shiny": 0
+        },
+        {
+          "name": "熔岩布丁",
+          "number": "NO.316",
+          "element": "水",
+          "element2": "火",
+          "shiny": 0
+        },
+        {
+          "name": "双灯鱼",
+          "number": "NO.320",
+          "element": "水",
+          "element2": "电",
+          "shiny": 1
+        },
+        {
+          "name": "利灯鱼",
+          "number": "NO.321",
+          "element": "水",
+          "element2": "电",
+          "shiny": 1
+        }
+      ]
+    },
+    "软体组": {
+      "desc": "身体柔软或形态不定的精灵",
+      "count": 38,
+      "spirits": [
+        {
+          "name": "毛毛",
+          "number": "NO.032",
+          "element": "虫",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "爬爬",
+          "number": "NO.033",
+          "element": "虫",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "化蝶（平常的样子）",
+          "number": "NO.034",
+          "element": "虫",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "矿晶虫",
+          "number": "NO.039",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（西瓜碧玺的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（莲花刚玉的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（星彩榴石的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（火山琉璃的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（蓝锥矿的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "晶石蜗（烧蓝黄金的样子）",
+          "number": "NO.040",
+          "element": "光",
+          "element2": "地",
+          "shiny": 0
+        },
+        {
+          "name": "伊贝儿",
+          "number": "NO.071",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "伊贝粉粉",
+          "number": "NO.072",
+          "element": "草",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "甜田螺",
+          "number": "NO.185",
+          "element": "水",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "壳乙螺",
+          "number": "NO.186",
+          "element": "水",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "卡洛儿",
+          "number": "NO.187",
+          "element": "水",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "脆筒甜甜",
+          "number": "NO.234",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "香草甜甜",
+          "number": "NO.235",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "香草甜甜（杨桃饰品）",
+          "number": "NO.235",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "香草甜甜（蓝莓饰品）",
+          "number": "NO.235",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（樱桃草莓口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（樱桃抹茶口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（蓝莓巧克力口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（蓝莓草莓口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（蓝莓抹茶口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（杨桃巧克力口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（杨桃草莓口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（杨桃抹茶口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "翡翠水母",
+          "number": "NO.244",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "琉璃水母",
+          "number": "NO.245",
+          "element": "水",
+          "element2": "毒",
+          "shiny": 0
+        },
+        {
+          "name": "布鲁斯",
+          "number": "NO.252",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "雪顶布鲁斯",
+          "number": "NO.253",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "冰钻布鲁斯",
+          "number": "NO.254",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "墨鱿士",
+          "number": "NO.280",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "混乱鱿彩",
+          "number": "NO.281",
+          "element": "幽",
+          "element2": "恶",
+          "shiny": 0
+        },
+        {
+          "name": "秩序鱿墨",
+          "number": "NO.282",
+          "element": "幽",
+          "element2": "萌",
+          "shiny": 0
+        },
+        {
+          "name": "粉粉星",
+          "number": "NO.330",
+          "element": "电",
+          "element2": "幻",
+          "shiny": 1
+        },
+        {
+          "name": "小皮球",
+          "number": "NO.331",
+          "element": "电",
+          "element2": "幻",
+          "shiny": 1
+        }
+      ]
+    },
+    "魔力组": {
+      "desc": "拥有强大魔法力量的神秘精灵",
+      "count": 39,
+      "spirits": [
+        {
+          "name": "火花",
+          "number": "NO.005",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "焰火",
+          "number": "NO.006",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "火神",
+          "number": "NO.007",
+          "element": "火",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "水蓝蓝",
+          "number": "NO.008",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "波波拉",
+          "number": "NO.009",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "水灵",
+          "number": "NO.010",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小灵菇",
+          "number": "NO.021",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "幻灵菇",
+          "number": "NO.022",
+          "element": "幽",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "幻影灵菇",
+          "number": "NO.023",
+          "element": "幽",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "小灵面",
+          "number": "NO.054",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "暗影灵面（睁眼的样子）",
+          "number": "NO.055",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "暗影灵面（闭眼的样子）",
+          "number": "NO.055",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "幽冥眼（睁眼的样子）",
+          "number": "NO.056",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "幽冥眼（闭眼的样子）",
+          "number": "NO.056",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "梦游（穿旧睡衣的样子）",
+          "number": "NO.057",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "梦悠悠（穿旧睡衣的样子）",
+          "number": "NO.058",
+          "element": "幽",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "石石",
+          "number": "NO.111",
+          "element": "地",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "巨灵石",
+          "number": "NO.112",
+          "element": "地",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "闪电环",
+          "number": "NO.207",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "刺电环",
+          "number": "NO.208",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "荆棘电环",
+          "number": "NO.209",
+          "element": "电",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "脆筒甜甜",
+          "number": "NO.234",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "香草甜甜",
+          "number": "NO.235",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "香草甜甜（杨桃饰品）",
+          "number": "NO.235",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "香草甜甜（蓝莓饰品）",
+          "number": "NO.235",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（樱桃草莓口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（樱桃抹茶口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（蓝莓巧克力口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（蓝莓草莓口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（蓝莓抹茶口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（杨桃巧克力口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（杨桃草莓口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "圣代甜甜（杨桃抹茶口味）",
+          "number": "NO.236",
+          "element": "冰",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "果冻",
+          "number": "NO.313",
+          "element": "水",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "抹茶布丁",
+          "number": "NO.314",
+          "element": "水",
+          "element2": "草",
+          "shiny": 0
+        },
+        {
+          "name": "空空颅",
+          "number": "NO.327",
+          "element": "幽",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "夜宿颅",
+          "number": "NO.328",
+          "element": "幽",
+          "element2": "",
+          "shiny": 1
+        },
+        {
+          "name": "夜枭",
+          "number": "NO.329",
+          "element": "幽",
+          "element2": "",
+          "shiny": 1
+        }
+      ]
+    },
+    "龙组": {
+      "desc": "具有龙族血统的精灵",
+      "count": 10,
+      "spirits": [
+        {
+          "name": "伊雷龙",
+          "number": "NO.203",
+          "element": "龙",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "伊兰龙",
+          "number": "NO.204",
+          "element": "龙",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "伊兰亚龙",
+          "number": "NO.204",
+          "element": "龙",
+          "element2": "",
+          "shiny": 0
+        },
+        {
+          "name": "小翼龙",
+          "number": "NO.224",
+          "element": "龙",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "翼龙",
+          "number": "NO.225",
+          "element": "龙",
+          "element2": "翼",
+          "shiny": 0
+        },
+        {
+          "name": "豆丁鱼",
+          "number": "NO.239",
+          "element": "水",
+          "element2": "龙",
+          "shiny": 0
+        },
+        {
+          "name": "快鳍鱼",
+          "number": "NO.240",
+          "element": "水",
+          "element2": "龙",
+          "shiny": 0
+        },
+        {
+          "name": "龙鱼",
+          "number": "NO.241",
+          "element": "水",
+          "element2": "龙",
+          "shiny": 0
+        },
+        {
+          "name": "大头骨龙",
+          "number": "NO.289",
+          "element": "龙",
+          "element2": "幽",
+          "shiny": 0
+        },
+        {
+          "name": "寂灭骨龙",
+          "number": "NO.290",
+          "element": "龙",
+          "element2": "幽",
+          "shiny": 0
+        }
+      ]
+    }
+  },
+  "shiny_final_list": [
+    "奇丽花",
+    "恶魔狼",
+    "獠牙猪",
+    "雪影娃娃",
+    "酷拉",
+    "红绒十字",
+    "立方人",
+    "格兰球",
+    "利灯鱼",
+    "月牙雪熊",
+    "窃光蚊",
+    "燃薪虫",
+    "夜枭",
+    "小皮球",
+    "贝古斯",
+    "粉耳星兔",
+    "落陨星兔",
+    "雅丹鬃"
+  ],
+  "transfers": {
+    "奇丽花": {
+      "reachable": [
+        {
+          "target": "恶魔狼",
+          "steps": 3,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 3,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 2,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 2,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 3,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 2,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 1,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 4,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 3,
+          "path": [
+            {
+              "f": "奇丽花",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "恶魔狼": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 3,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 1,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 2,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 1,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 1,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 4,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 3,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 2,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "恶魔狼",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "獠牙猪": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 3,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 1,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 2,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 1,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 1,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 4,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 3,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 2,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "獠牙猪",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "雪影娃娃": {
+      "reachable": [],
+      "unreachable": [
+        "奇丽花",
+        "恶魔狼",
+        "獠牙猪",
+        "酷拉",
+        "红绒十字",
+        "立方人",
+        "格兰球",
+        "利灯鱼",
+        "月牙雪熊",
+        "窃光蚊",
+        "燃薪虫",
+        "夜枭",
+        "小皮球",
+        "贝古斯",
+        "粉耳星兔",
+        "落陨星兔",
+        "雅丹鬃"
+      ]
+    },
+    "酷拉": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 2,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 2,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 2,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 1,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "红绒十字",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 2,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 3,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 2,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 3,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "酷拉",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "红绒十字": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 2,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 3,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 2,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 2,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "红绒十字",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "立方人": {
+      "reachable": [
+        {
+          "target": "雪影娃娃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "立方人",
+              "t": "雪影娃娃",
+              "v": "拟人组"
+            }
+          ]
+        },
+        {
+          "target": "贝古斯",
+          "steps": 1,
+          "path": [
+            {
+              "f": "立方人",
+              "t": "贝古斯",
+              "v": "机械组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "奇丽花",
+        "恶魔狼",
+        "獠牙猪",
+        "酷拉",
+        "红绒十字",
+        "格兰球",
+        "利灯鱼",
+        "月牙雪熊",
+        "窃光蚊",
+        "燃薪虫",
+        "夜枭",
+        "小皮球",
+        "粉耳星兔",
+        "落陨星兔",
+        "雅丹鬃"
+      ]
+    },
+    "格兰球": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 1,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 2,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 2,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 1,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 1,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 2,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 2,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 1,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 3,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "利灯鱼": {
+      "reachable": [],
+      "unreachable": [
+        "奇丽花",
+        "恶魔狼",
+        "獠牙猪",
+        "雪影娃娃",
+        "酷拉",
+        "红绒十字",
+        "立方人",
+        "格兰球",
+        "月牙雪熊",
+        "窃光蚊",
+        "燃薪虫",
+        "夜枭",
+        "小皮球",
+        "贝古斯",
+        "粉耳星兔",
+        "落陨星兔",
+        "雅丹鬃"
+      ]
+    },
+    "月牙雪熊": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 3,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 1,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 1,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 2,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 1,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 4,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 3,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 1,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "月牙雪熊",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "窃光蚊": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 2,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 4,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 4,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 3,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 3,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 3,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 4,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 1,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 5,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 3,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 3,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 3,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 4,
+          "path": [
+            {
+              "f": "窃光蚊",
+              "t": "燃薪虫",
+              "v": "昆虫组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "燃薪虫": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 1,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 3,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 3,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 2,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 2,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 3,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 1,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 4,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 3,
+          "path": [
+            {
+              "f": "燃薪虫",
+              "t": "格兰球",
+              "v": "植物组"
+            },
+            {
+              "f": "格兰球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "夜枭": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 4,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 2,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 2,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 3,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 3,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 2,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 3,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 1,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 5,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 4,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 3,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 3,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 3,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "夜枭",
+              "t": "月牙雪熊",
+              "v": "巨灵组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "小皮球": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 2,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 2,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 2,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 1,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 1,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 2,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 3,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 2,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 3,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "小皮球",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "贝古斯": {
+      "reachable": [
+        {
+          "target": "雪影娃娃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "贝古斯",
+              "t": "立方人",
+              "v": "机械组"
+            },
+            {
+              "f": "立方人",
+              "t": "雪影娃娃",
+              "v": "拟人组"
+            }
+          ]
+        },
+        {
+          "target": "立方人",
+          "steps": 1,
+          "path": [
+            {
+              "f": "贝古斯",
+              "t": "立方人",
+              "v": "机械组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "奇丽花",
+        "恶魔狼",
+        "獠牙猪",
+        "酷拉",
+        "红绒十字",
+        "格兰球",
+        "利灯鱼",
+        "月牙雪熊",
+        "窃光蚊",
+        "燃薪虫",
+        "夜枭",
+        "小皮球",
+        "粉耳星兔",
+        "落陨星兔",
+        "雅丹鬃"
+      ]
+    },
+    "粉耳星兔": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 2,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 2,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 2,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 1,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 1,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 2,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 3,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 2,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 3,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "粉耳星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "落陨星兔": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 2,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 2,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 2,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 1,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 1,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 1,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 2,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 3,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 2,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 3,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 1,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 1,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "雅丹鬃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "落陨星兔",
+              "t": "红绒十字",
+              "v": "妖精组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雅丹鬃",
+              "v": "动物组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    },
+    "雅丹鬃": {
+      "reachable": [
+        {
+          "target": "奇丽花",
+          "steps": 3,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "奇丽花",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "恶魔狼",
+          "steps": 1,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "恶魔狼",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "獠牙猪",
+          "steps": 1,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "獠牙猪",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "雪影娃娃",
+          "steps": 2,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "雪影娃娃",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "酷拉",
+          "steps": 2,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "酷拉",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "红绒十字",
+          "steps": 1,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "格兰球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "月牙雪熊",
+          "steps": 1,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            }
+          ]
+        },
+        {
+          "target": "窃光蚊",
+          "steps": 4,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            },
+            {
+              "f": "燃薪虫",
+              "t": "窃光蚊",
+              "v": "昆虫组"
+            }
+          ]
+        },
+        {
+          "target": "燃薪虫",
+          "steps": 3,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "格兰球",
+              "v": "妖精组"
+            },
+            {
+              "f": "格兰球",
+              "t": "燃薪虫",
+              "v": "植物组"
+            }
+          ]
+        },
+        {
+          "target": "夜枭",
+          "steps": 2,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "月牙雪熊",
+              "v": "动物组"
+            },
+            {
+              "f": "月牙雪熊",
+              "t": "夜枭",
+              "v": "巨灵组"
+            }
+          ]
+        },
+        {
+          "target": "小皮球",
+          "steps": 2,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "小皮球",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "粉耳星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "粉耳星兔",
+              "v": "妖精组"
+            }
+          ]
+        },
+        {
+          "target": "落陨星兔",
+          "steps": 2,
+          "path": [
+            {
+              "f": "雅丹鬃",
+              "t": "红绒十字",
+              "v": "动物组"
+            },
+            {
+              "f": "红绒十字",
+              "t": "落陨星兔",
+              "v": "妖精组"
+            }
+          ]
+        }
+      ],
+      "unreachable": [
+        "立方人",
+        "利灯鱼",
+        "贝古斯"
+      ]
+    }
+  }
+}

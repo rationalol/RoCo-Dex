@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python skillsGroup.py)"
+      "Bash(python skillsGroup.py)",
+      "Bash(sed -n '266p' \"C:\\\\\\\\Users\\\\\\\\27209\\\\\\\\Desktop\\\\\\\\rocokingdom\\\\\\\\roco-kingdom-pet-compose\\\\\\\\app\\\\\\\\src\\\\\\\\main\\\\\\\\assets\\\\\\\\scripts\\\\\\\\data\\\\\\\\source_egg.html\")",
+      "Read(//tmp/**)",
+      "Bash(grep -oP 'const _TD = \\\\K.*' \"C:\\\\\\\\Users\\\\\\\\27209\\\\\\\\Desktop\\\\\\\\rocokingdom\\\\\\\\roco-kingdom-pet-compose\\\\\\\\app\\\\\\\\src\\\\\\\\main\\\\\\\\assets\\\\\\\\scripts\\\\\\\\data\\\\\\\\source_egg.html\")",
+      "Bash(python3 -c \"import sys,json; d=sys.stdin.read\\(\\).rstrip\\(';'\\); d=json.loads\\(d\\); print\\(json.dumps\\(list\\(d.keys\\(\\)\\), ensure_ascii=False\\)\\)\")",
+      "Bash(python get_data.py)"
     ]
   }
 }

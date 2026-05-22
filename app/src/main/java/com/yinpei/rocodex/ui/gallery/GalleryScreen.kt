@@ -78,6 +78,7 @@ fun GalleryScreen(
 
     val pets by viewModel.pets.collectAsState()
     val selectedElements by viewModel.selectedElements.collectAsState()
+    val selectedEggGroups by viewModel.selectedEggGroups.collectAsState()
     val isShinyOnly by viewModel.isShinyOnly.collectAsState()
     val searchQuery by viewModel.searchQuery.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
@@ -151,6 +152,9 @@ fun GalleryScreen(
                         showShinyFilter = true,
                         isShinyOnly = isShinyOnly,
                         onToggleShiny = { viewModel.toggleShiny() },
+                        showEggGroupFilter = true,
+                        selectedEggGroups = selectedEggGroups,
+                        onToggleEggGroup = { viewModel.toggleEggGroup(it) },
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
                 }

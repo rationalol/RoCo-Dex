@@ -1,6 +1,6 @@
 import json
 
-with open('data/data.json', 'r', encoding='utf-8') as f:
+with open('data/source_main.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 img_links = set()

@@ -39,7 +39,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
+import com.yinpei.rocodex.data.allEggGroups
 import com.yinpei.rocodex.data.allElements
+import com.yinpei.rocodex.data.getEggGroupColor
 import com.yinpei.rocodex.data.getElementColor
 import com.yinpei.rocodex.data.mapElementIconPath
 
@@ -52,12 +54,17 @@ fun FilterBar(
     modifier: Modifier = Modifier,
     showShinyFilter: Boolean = false,
     isShinyOnly: Boolean = false,
-    onToggleShiny: () -> Unit = {}
+    onToggleShiny: () -> Unit = {},
+    showEggGroupFilter: Boolean = false,
+    selectedEggGroups: Set<String> = emptySet(),
+    onToggleEggGroup: (String) -> Unit = {}
 ) {
-    var expanded by remember { mutableStateOf(false) }
+    var elementExpanded by remember { mutableStateOf(false) }
+    var eggExpanded by remember { mutableStateOf(false) }
 
     val hasElementFilters = selectedElements.isNotEmpty()
-    val hasAnyFilter = hasElementFilters || isShinyOnly
+    val hasEggGroupFilters = selectedEggGroups.isNotEmpty()
+    val hasAnyFilter = hasElementFilters || hasEggGroupFilters || isShinyOnly
 
     Column(modifier = modifier.fillMaxWidth()) {
         Row(
@@ -69,7 +76,7 @@ fun FilterBar(
         ) {
             // 属性筛选切换按钮
             Surface(
-                onClick = { expanded = !expanded },
+                onClick = { elementExpanded = !elementExpanded },
                 shape = RoundedCornerShape(20.dp),
                 color = if (hasElementFilters) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
                 modifier = Modifier.height(36.dp)
@@ -93,11 +100,48 @@ fun FilterBar(
                     )
                     Spacer(modifier = Modifier.width(4.dp))
                     Icon(
-                        imageVector = if (expanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
+                        imageVector = if (elementExpanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
                         contentDescription = null,
                         modifier = Modifier.size(18.dp),
                         tint = if (hasElementFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
                     )
+                }
+            }
+
+            // 蛋组筛选切换按钮
+            if (showEggGroupFilter) {
+                Spacer(modifier = Modifier.width(8.dp))
+                Surface(
+                    onClick = { eggExpanded = !eggExpanded },
+                    shape = RoundedCornerShape(20.dp),
+                    color = if (hasEggGroupFilters) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                    modifier = Modifier.height(36.dp)
+                ) {
+                    Row(
+                        modifier = Modifier.padding(horizontal = 12.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.FilterList,
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp),
+                            tint = if (hasEggGroupFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Text(
+                            text = if (!hasEggGroupFilters) "蛋组筛选" else "蛋组 (${selectedEggGroups.size})",
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = if (hasEggGroupFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Icon(
+                            imageVector = if (eggExpanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp),
+                            tint = if (hasEggGroupFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
                 }
             }
 
@@ -144,7 +188,7 @@ fun FilterBar(
         }
 
         AnimatedVisibility(
-            visible = expanded,
+            visible = elementExpanded,
             enter = expandVertically() + fadeIn(),
             exit = shrinkVertically() + fadeOut()
         ) {
@@ -175,6 +219,40 @@ fun FilterBar(
                 }
             }
         }
+
+        if (showEggGroupFilter) {
+            AnimatedVisibility(
+                visible = eggExpanded,
+                enter = expandVertically() + fadeIn(),
+                exit = shrinkVertically() + fadeOut()
+            ) {
+                Surface(
+                    modifier = Modifier.fillMaxWidth(),
+                    color = MaterialTheme.colorScheme.surface,
+                    tonalElevation = 1.dp,
+                ) {
+                    FlowRow(
+                        modifier = Modifier
+                            .padding(16.dp)
+                            .fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        allEggGroups.forEach { group ->
+                            val isSelected = selectedEggGroups.contains(group)
+                            val color = getEggGroupColor(group)
+
+                            FilterBadge(
+                                text = group,
+                                isSelected = isSelected,
+                                color = color,
+                                onClick = { onToggleEggGroup(group) }
+                            )
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -182,10 +260,10 @@ fun FilterBar(
 @Composable
 private fun FilterBadge(
     text: String,
-    iconUrl: String,
     isSelected: Boolean,
     color: Color,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    iconUrl: String? = null
 ) {
     Surface(
         onClick = onClick,
@@ -198,12 +276,14 @@ private fun FilterBadge(
             modifier = Modifier.padding(horizontal = 8.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            AsyncImage(
-                model = iconUrl,
-                contentDescription = null,
-                modifier = Modifier.size(16.dp)
-            )
-            Spacer(modifier = Modifier.width(4.dp))
+            if (iconUrl != null) {
+                AsyncImage(
+                    model = iconUrl,
+                    contentDescription = null,
+                    modifier = Modifier.size(16.dp)
+                )
+                Spacer(modifier = Modifier.width(4.dp))
+            }
             Text(
                 text = text,
                 fontSize = 12.sp,

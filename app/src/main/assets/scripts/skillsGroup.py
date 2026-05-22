@@ -2,7 +2,7 @@ import json
 import os
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-data_path = os.path.join(script_dir, "data", "pets_converted.json")
+data_path = os.path.join(script_dir, "data", "converted_main.json")
 output_path = os.path.join(script_dir, "skills_output.json")
 
 with open(data_path, "r", encoding="utf-8") as f:

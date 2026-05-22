@@ -66,10 +66,12 @@ import com.yinpei.rocodex.data.model.Pet
 import com.yinpei.rocodex.data.model.PetForm
 import com.yinpei.rocodex.data.model.Skill
 import com.yinpei.rocodex.data.model.SkillCatalogEntry
+import com.yinpei.rocodex.ui.components.EggGroupBadgeRow
 import com.yinpei.rocodex.ui.components.ElementBadgeRow
 import com.yinpei.rocodex.ui.components.SkillCard
 import com.yinpei.rocodex.ui.components.StatBarGroup
 import com.yinpei.rocodex.ui.theme.LocalWindowSizeClass
+import com.yinpei.rocodex.ui.theme.RoCoFamily
 import kotlin.math.ceil
 
 @RequiresApi(Build.VERSION_CODES.O)
@@ -171,10 +173,22 @@ private fun DetailContent(
         Spacer(modifier = Modifier.height(16.dp))
 
         // 属性标签
-        ElementBadgeRow(
-            elements = pet.element,
+
+        Row(
             modifier = Modifier.fillMaxWidth(),
-        )
+            verticalAlignment = Alignment.CenterVertically // 垂直居中对齐
+        ) {
+            ElementBadgeRow(
+                elements = pet.element,
+            )
+            Spacer(modifier = Modifier.width(4.dp))
+            // 蛋组标签
+            EggGroupBadgeRow(
+                elements = pet.eggGroups,
+            )
+        }
+
+
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -190,10 +204,11 @@ private fun DetailContent(
 
         // 种族值
         Text(
-            text = "种族值",
+            text = "种族值 ${pet.hp + pet.atk + pet.mat + pet.def + pet.mdf + pet.spd}",
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.onSurface
+            color = MaterialTheme.colorScheme.onSurface,
+            fontFamily = RoCoFamily
         )
         Spacer(modifier = Modifier.height(12.dp))
         StatBarGroup(
@@ -220,8 +235,8 @@ private fun DetailContent(
 
         // 技能组
         SkillGroupSection("精灵技能", pet.skills.group1, cellsSkillsRow, onSkillClick)
-        SkillGroupSection("血脉技能", pet.skills.group2, cellsSkillsRow, onSkillClick)
         SkillGroupSection("可学技能", pet.skills.group3, cellsSkillsRow, onSkillClick)
+        SkillGroupSection("血脉技能", pet.skills.group2, cellsSkillsRow, onSkillClick)
 
         Spacer(modifier = Modifier.height(24.dp))
     }
@@ -250,7 +265,8 @@ private fun SkillGroupSection(
         text = "$title (${skills.size})",
         fontSize = 18.sp,
         fontWeight = FontWeight.Bold,
-        color = MaterialTheme.colorScheme.onSurface
+        color = MaterialTheme.colorScheme.onSurface,
+        fontFamily = RoCoFamily
     )
     Spacer(modifier = Modifier.height(12.dp))
     LazyVerticalGrid(
@@ -259,7 +275,7 @@ private fun SkillGroupSection(
         verticalArrangement = Arrangement.spacedBy(8.dp),
         modifier = Modifier
             .fillMaxWidth()
-            .height(calculateCardHeight(skills.size,row,140).dp),
+            .height(calculateCardHeight(skills.size, row, 140).dp),
         userScrollEnabled = false
     ) {
         items(skills) { skill ->
@@ -365,7 +381,8 @@ private fun PetContent(pet: Pet, isShiny: Boolean? = false) {
             } else "异色形态",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.onSurface
+            color = MaterialTheme.colorScheme.onSurface,
+            fontFamily = RoCoFamily
         )
     }
 }
@@ -386,7 +403,8 @@ private fun TraitSection(pet: Pet) {
                 fontSize = 14.sp,
                 color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f),
                 modifier = Modifier.padding(16.dp),
-                textAlign = TextAlign.Center
+                textAlign = TextAlign.Center,
+                fontFamily = RoCoFamily
             )
         }
         return
@@ -412,7 +430,8 @@ private fun TraitSection(pet: Pet) {
                     text = pet.trait.name,
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.onSurface
+                    color = MaterialTheme.colorScheme.onSurface,
+                    fontFamily = RoCoFamily
                 )
                 Spacer(modifier = Modifier.weight(1f))
                 Text(

@@ -5,6 +5,7 @@ data class Pet(
     val pindex: String,
     val name: String,
     val element: List<String>,
+    val eggGroups: List<String> = emptyList(),
     val shiny:Int,
     val avatar: String,
     val hp: Int,

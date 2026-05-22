@@ -25,19 +25,25 @@ class GalleryViewModel(application: Application) : AndroidViewModel(application)
     private val _selectedElements = MutableStateFlow<Set<String>>(emptySet())
     val selectedElements: StateFlow<Set<String>> = _selectedElements.asStateFlow()
 
+    private val _selectedEggGroups = MutableStateFlow<Set<String>>(emptySet())
+    val selectedEggGroups: StateFlow<Set<String>> = _selectedEggGroups.asStateFlow()
+
     private val _isShinyOnly = MutableStateFlow(false)
     val isShinyOnly: StateFlow<Boolean> = _isShinyOnly.asStateFlow()
 
     private val _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
 
-    val pets: StateFlow<List<Pet>> = combine(_allPets, _selectedElements, _isShinyOnly, _searchQuery) { all, elements, shinyOnly, query ->
+    val pets: StateFlow<List<Pet>> = combine(
+        _allPets, _selectedElements, _selectedEggGroups, _isShinyOnly, _searchQuery
+    ) { all, elements, eggGroups, shinyOnly, query ->
         all.filter { pet ->
             val elementMatch = elements.isEmpty() || pet.element.any { it in elements }
+            val eggGroupMatch = eggGroups.isEmpty() || pet.eggGroups.any { it in eggGroups }
             val shinyMatch = !shinyOnly || pet.shiny == 1
             val nameMatch = query.isEmpty() || pet.name.contains(query, ignoreCase = true) || pet.id.toString().contains(query)
             val pindexNotEmpty = pet.pindex.isNotEmpty()
-            elementMatch && shinyMatch && nameMatch && pindexNotEmpty
+            elementMatch && eggGroupMatch && shinyMatch && nameMatch && pindexNotEmpty
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
@@ -61,12 +67,21 @@ class GalleryViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
+    fun toggleEggGroup(group: String) {
+        _selectedEggGroups.value = if (_selectedEggGroups.value.contains(group)) {
+            _selectedEggGroups.value - group
+        } else {
+            _selectedEggGroups.value + group
+        }
+    }
+
     fun toggleShiny() {
         _isShinyOnly.value = !_isShinyOnly.value
     }
 
     fun clearFilters() {
         _selectedElements.value = emptySet()
+        _selectedEggGroups.value = emptySet()
         _isShinyOnly.value = false
     }
 

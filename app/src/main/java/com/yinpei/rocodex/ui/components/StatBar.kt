@@ -31,6 +31,7 @@ import com.yinpei.rocodex.data.mapAvatarPath
 import com.yinpei.rocodex.data.mapAvatarShinyPath
 import com.yinpei.rocodex.data.mapBaseStatsIconPath
 import com.yinpei.rocodex.data.model.StatType
+import com.yinpei.rocodex.ui.theme.RoCoFamily
 
 @Composable
 fun StatBar(
@@ -66,7 +67,8 @@ fun StatBar(
             fontSize = 12.sp,
             fontWeight = FontWeight.Medium,
             color = MaterialTheme.colorScheme.onSurface,
-            modifier = Modifier.width(36.dp)
+            modifier = Modifier.width(36.dp),
+            fontFamily = RoCoFamily
         )
 
         Spacer(modifier = Modifier.width(8.dp))
@@ -77,7 +79,8 @@ fun StatBar(
             fontSize = 12.sp,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.onSurface,
-            modifier = Modifier.width(32.dp)
+            modifier = Modifier.width(32.dp),
+            fontFamily = RoCoFamily
         )
 
         Spacer(modifier = Modifier.width(8.dp))

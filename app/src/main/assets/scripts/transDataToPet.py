@@ -2,11 +2,33 @@ import json
 from collections import Counter
 import os
 
-with open('data/data.json', 'r', encoding='utf-8') as f:
+with open('data/source_main.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
-with open('data/pets2.json', 'r', encoding='utf-8') as f:
+with open('data/source_element_shiny.json', 'r', encoding='utf-8') as f:
     elementList = json.load(f)
+
+with open('data/source_egg_data.json', 'r', encoding='utf-8') as f:
+    eggData = json.load(f)
+
+# 构建蛋组映射: "NO.001" -> ["动物组", "天空组"]
+eggGroupMap = {}
+for groupName, groupData in eggData.get('group_spirits', {}).items():
+    for spirit in groupData.get('spirits', []):
+        number = spirit.get('number', '')
+        if number not in eggGroupMap:
+            eggGroupMap[number] = []
+        if groupName not in eggGroupMap[number]:
+            eggGroupMap[number].append(groupName)
+
+
+def getEggGroups(petIndex, petId):
+    groups = eggGroupMap.get(petIndex, [])
+    if not groups:
+        number = f"NO.{petId:03d}"
+        groups = eggGroupMap.get(number, [])
+    return groups
+
 
 pets = []
 
@@ -104,6 +126,7 @@ for key, d in data.items():
             'avatar': currentEvo.get('avatar', ''),
             'forms': formList,
             'evo': evoList,
+            'eggGroups': getEggGroups(petIndex, int(key)),
             'hp': d['hp'],
             'atk': d['atk'],
             'mat': d['matk'],
@@ -139,6 +162,7 @@ for key, d in data.items():
             'avatar': petInfo.get('avatar',''),
             'forms': formList,
             'evo': evoList,
+            'eggGroups': getEggGroups(petIndex, int(key)),
             'hp': d['hp'],
             'atk': d['atk'],
             'mat': d['matk'],
@@ -157,7 +181,19 @@ for key, d in data.items():
             'skills': skills,
         })
 
-with open('data/pets_converted.json', 'w', encoding='utf-8') as f:
+with open('data/converted_main.json', 'w', encoding='utf-8') as f:
     json.dump(pets, f, ensure_ascii=False, indent=2)
 
-print(f'Done. {len(pets)} pets converted -> pets_converted.json')
+try:
+    with open('../pets.json','r',encoding='utf-8') as f:
+        content = f.read().strip()
+        target_data = json.loads(content) if content else {}
+except (FileNotFoundError, json.JSONDecodeError):
+    target_data = {}
+
+target_data['pets'] = pets
+
+with open('../pets.json', 'w', encoding='utf-8') as f:
+    json.dump(target_data, f, ensure_ascii=False, indent=2)
+
+print(f'Done. {len(pets)} pets converted -> converted_main.json')

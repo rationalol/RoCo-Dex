@@ -34,3 +34,31 @@ val allElements: List<String> = listOf(
 fun getElementColor(element: String): Color {
     return elementColors[element] ?: Color.Gray
 }
+
+/** 蛋组列表（与 pets.json / source_egg_data.json 一致） */
+val allEggGroups: List<String> = listOf(
+    "两栖组", "动物组", "大地组", "天空组", "妖精组", "巨灵组", "拟人组",
+    "昆虫组", "机械组", "植物组", "海洋组", "软体组", "魔力组", "龙组", "无法孵蛋"
+)
+
+val eggGroupColors: Map<String, Color> = mapOf(
+    "两栖组" to Color(0xFF26A69A),
+    "动物组" to Color(0xFF8D6E63),
+    "大地组" to Color(0xFF795548),
+    "天空组" to Color(0xFF42A5F5),
+    "妖精组" to Color(0xFFEC407A),
+    "巨灵组" to Color(0xFF7E57C2),
+    "拟人组" to Color(0xFF5C6BC0),
+    "昆虫组" to Color(0xFF8BC34A),
+    "机械组" to Color(0xFF607D8B),
+    "植物组" to Color(0xFF66BB6A),
+    "海洋组" to Color(0xFF29B6F6),
+    "软体组" to Color(0xFFAB47BC),
+    "魔力组" to Color(0xFF9575CD),
+    "龙组" to Color(0xFFE91E63),
+    "无法孵蛋" to Color(0xFF9E9E9E),
+)
+
+fun getEggGroupColor(group: String): Color {
+    return eggGroupColors[group] ?: Color.Gray
+}
