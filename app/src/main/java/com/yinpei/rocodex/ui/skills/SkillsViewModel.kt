@@ -97,4 +97,16 @@ class SkillsViewModel(application: Application) : AndroidViewModel(application) 
     fun onSearchQueryChange(query: String) {
         _searchQuery.value = query
     }
+
+    private var listScrollIndex = 0
+    private var listScrollOffset = 0
+
+    fun initialListScrollIndex(): Int = listScrollIndex
+
+    fun initialListScrollOffset(): Int = listScrollOffset
+
+    fun saveListScrollPosition(index: Int, offset: Int) {
+        listScrollIndex = index
+        listScrollOffset = offset
+    }
 }
