@@ -2,6 +2,7 @@ package com.yinpei.rocodex.ui.weakness
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -255,7 +256,8 @@ private fun EffectivenessSection(
                         when (type) {
                             true -> "物攻"
                             else -> "防御"
-                        }
+                        },
+                        isSystemInDarkTheme()
                     ),
                     contentDescription = null,
                     modifier = Modifier.size(16.dp)

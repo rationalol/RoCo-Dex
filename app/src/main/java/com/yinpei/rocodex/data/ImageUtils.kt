@@ -29,8 +29,9 @@ fun mapSkillIconPath(element: String, skillName: String): String {
 }
 
 /** 技能类型图标 asset URI */
-fun mapSkillTypeIconPath(skillName: String): String {
-    return "file:///android_asset/skillstype/$skillName.png"
+fun mapSkillTypeIconPath(skillName: String, isDarkTheme: Boolean): String {
+    val folder = if (isDarkTheme) "skillstypeDark" else "skillstype"
+    return "file:///android_asset/$folder/$skillName.png"
 }
 
 /** 将特性映射为图标 asset URI */
@@ -44,9 +45,10 @@ fun shinyIconPath(name: String): String {
 }
 
 fun energyConsumptionIconPath(name: String): String{
-    return "file:///android_asset/skills/$name.png"
+    return "file:///android_asset/skills/$name.svg"
 }
 
-fun mapBaseStatsIconPath(name:String) : String{
-    return "file:///android_asset/baseStatsIcon/$name.png"
+fun mapBaseStatsIconPath(name: String, isDarkTheme: Boolean): String {
+    val folder = if (isDarkTheme) "baseStatsIcon" else "baseStatsIconLight"
+    return "file:///android_asset/$folder/$name.png"
 }

@@ -2,6 +2,7 @@ package com.yinpei.rocodex.ui.skills
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -218,7 +219,7 @@ private fun SkillHeaderCard(entry: SkillCatalogEntry) {
             Spacer(modifier = Modifier.height(8.dp))
             Row(verticalAlignment = Alignment.CenterVertically) {
                 AsyncImage(
-                    model = mapSkillTypeIconPath(skill.type),
+                    model = mapSkillTypeIconPath(skill.type, isSystemInDarkTheme()),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp)
                 )

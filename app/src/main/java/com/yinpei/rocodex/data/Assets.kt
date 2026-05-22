@@ -62,3 +62,17 @@ val eggGroupColors: Map<String, Color> = mapOf(
 fun getEggGroupColor(group: String): Color {
     return eggGroupColors[group] ?: Color.Gray
 }
+
+/** 招式类型列表（与 skillstype 图标一致） */
+val allSkillTypes: List<String> = listOf("物攻", "魔攻", "防御", "状态")
+
+val skillTypeColors: Map<String, Color> = mapOf(
+    "物攻" to Color(0xFFFF9800),
+    "魔攻" to Color(0xFF9C27B0),
+    "防御" to Color(0xFF2196F3),
+    "状态" to Color(0xFF607D8B),
+)
+
+fun getSkillTypeColor(type: String): Color {
+    return skillTypeColors[type] ?: Color.Gray
+}

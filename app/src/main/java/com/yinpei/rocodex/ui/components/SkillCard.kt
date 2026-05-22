@@ -5,6 +5,7 @@ import androidx.annotation.RequiresApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -162,7 +163,7 @@ fun SkillCard(
                             maxLines = 1 // 强制单行
                         )
                         AsyncImage(
-                            model = mapSkillTypeIconPath(skill.type),
+                            model = mapSkillTypeIconPath(skill.type, isSystemInDarkTheme()),
                             contentDescription = null,
                             modifier = Modifier.size(10.dp)
                         )
@@ -284,6 +285,7 @@ fun StarConsumeBadge(
             contentDescription = null,
             modifier = Modifier.size(14.dp)
         )
+
 
         Text(
             text = "能耗",

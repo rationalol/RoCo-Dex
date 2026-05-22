@@ -31,18 +31,23 @@ class SkillsViewModel(application: Application) : AndroidViewModel(application) 
     private val _selectedElements = MutableStateFlow<Set<String>>(emptySet())
     val selectedElements: StateFlow<Set<String>> = _selectedElements.asStateFlow()
 
+    private val _selectedSkillTypes = MutableStateFlow<Set<String>>(emptySet())
+    val selectedSkillTypes: StateFlow<Set<String>> = _selectedSkillTypes.asStateFlow()
+
     private val _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
 
     val skillItems: StateFlow<List<IndexedSkillEntry>> = combine(
         _allIndexed,
         _selectedElements,
+        _selectedSkillTypes,
         _searchQuery
-    ) { indexed, elements, query ->
+    ) { indexed, elements, types, query ->
         val q = query.trim()
         indexed.filter { item ->
             val skill = item.entry.asSkill()
             val elementMatch = elements.isEmpty() || skill.element in elements
+            val typeMatch = types.isEmpty() || skill.type in types
             val searchMatch = q.isEmpty() ||
                 skill.name.contains(q, ignoreCase = true) ||
                 skill.desc.contains(q, ignoreCase = true) ||
@@ -50,7 +55,7 @@ class SkillsViewModel(application: Application) : AndroidViewModel(application) 
                 skill.element.contains(q, ignoreCase = true) ||
                 skill.power.toString().contains(q) ||
                 skill.cost.toString().contains(q)
-            elementMatch && searchMatch
+            elementMatch && typeMatch && searchMatch
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
@@ -76,8 +81,17 @@ class SkillsViewModel(application: Application) : AndroidViewModel(application) 
         }
     }
 
+    fun toggleSkillType(type: String) {
+        _selectedSkillTypes.value = if (_selectedSkillTypes.value.contains(type)) {
+            _selectedSkillTypes.value - type
+        } else {
+            _selectedSkillTypes.value + type
+        }
+    }
+
     fun clearFilters() {
         _selectedElements.value = emptySet()
+        _selectedSkillTypes.value = emptySet()
     }
 
     fun onSearchQueryChange(query: String) {

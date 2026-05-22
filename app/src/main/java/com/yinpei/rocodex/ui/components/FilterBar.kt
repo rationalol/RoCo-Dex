@@ -5,6 +5,8 @@ import androidx.compose.animation.expandVertically
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.shrinkVertically
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -17,8 +19,10 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Egg
 import androidx.compose.material.icons.filled.FilterList
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
@@ -41,9 +45,12 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.yinpei.rocodex.data.allEggGroups
 import com.yinpei.rocodex.data.allElements
+import com.yinpei.rocodex.data.allSkillTypes
 import com.yinpei.rocodex.data.getEggGroupColor
 import com.yinpei.rocodex.data.getElementColor
+import com.yinpei.rocodex.data.getSkillTypeColor
 import com.yinpei.rocodex.data.mapElementIconPath
+import com.yinpei.rocodex.data.mapSkillTypeIconPath
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
@@ -57,19 +64,25 @@ fun FilterBar(
     onToggleShiny: () -> Unit = {},
     showEggGroupFilter: Boolean = false,
     selectedEggGroups: Set<String> = emptySet(),
-    onToggleEggGroup: (String) -> Unit = {}
+    onToggleEggGroup: (String) -> Unit = {},
+    showSkillTypeFilter: Boolean = false,
+    selectedSkillTypes: Set<String> = emptySet(),
+    onToggleSkillType: (String) -> Unit = {}
 ) {
     var elementExpanded by remember { mutableStateOf(false) }
     var eggExpanded by remember { mutableStateOf(false) }
+    var skillTypeExpanded by remember { mutableStateOf(false) }
+    val isDarkTheme = isSystemInDarkTheme()
 
     val hasElementFilters = selectedElements.isNotEmpty()
     val hasEggGroupFilters = selectedEggGroups.isNotEmpty()
-    val hasAnyFilter = hasElementFilters || hasEggGroupFilters || isShinyOnly
+    val hasSkillTypeFilters = selectedSkillTypes.isNotEmpty()
+    val hasAnyFilter = hasElementFilters || hasEggGroupFilters || hasSkillTypeFilters || isShinyOnly
 
     Column(modifier = modifier.fillMaxWidth()) {
         Row(
             modifier = Modifier
-                .fillMaxWidth()
+                .fillMaxWidth().horizontalScroll(rememberScrollState())
                 .padding(horizontal = 16.dp, vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Start
@@ -108,6 +121,42 @@ fun FilterBar(
                 }
             }
 
+            // 招式类型筛选切换按钮
+            if (showSkillTypeFilter) {
+                Spacer(modifier = Modifier.width(8.dp))
+                Surface(
+                    onClick = { skillTypeExpanded = !skillTypeExpanded },
+                    shape = RoundedCornerShape(20.dp),
+                    color = if (hasSkillTypeFilters) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                    modifier = Modifier.height(36.dp)
+                ) {
+                    Row(
+                        modifier = Modifier.padding(horizontal = 12.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        AsyncImage(
+                            model = mapSkillTypeIconPath("物攻", isDarkTheme),
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp)
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Text(
+                            text = if (!hasSkillTypeFilters) "类型筛选" else "类型 (${selectedSkillTypes.size})",
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = if (hasSkillTypeFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Icon(
+                            imageVector = if (skillTypeExpanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp),
+                            tint = if (hasSkillTypeFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+            }
+
             // 蛋组筛选切换按钮
             if (showEggGroupFilter) {
                 Spacer(modifier = Modifier.width(8.dp))
@@ -122,7 +171,7 @@ fun FilterBar(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Icon(
-                            imageVector = Icons.Default.FilterList,
+                            imageVector = Icons.Default.Egg,
                             contentDescription = null,
                             modifier = Modifier.size(18.dp),
                             tint = if (hasEggGroupFilters) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
@@ -215,6 +264,41 @@ fun FilterBar(
                             color = color,
                             onClick = { onToggleElement(element) }
                         )
+                    }
+                }
+            }
+        }
+
+        if (showSkillTypeFilter) {
+            AnimatedVisibility(
+                visible = skillTypeExpanded,
+                enter = expandVertically() + fadeIn(),
+                exit = shrinkVertically() + fadeOut()
+            ) {
+                Surface(
+                    modifier = Modifier.fillMaxWidth(),
+                    color = MaterialTheme.colorScheme.surface,
+                    tonalElevation = 1.dp,
+                ) {
+                    FlowRow(
+                        modifier = Modifier
+                            .padding(16.dp)
+                            .fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        allSkillTypes.forEach { type ->
+                            val isSelected = selectedSkillTypes.contains(type)
+                            val color = getSkillTypeColor(type)
+
+                            FilterBadge(
+                                text = type,
+                                iconUrl = mapSkillTypeIconPath(type, isDarkTheme),
+                                isSelected = isSelected,
+                                color = color,
+                                onClick = { onToggleSkillType(type) }
+                            )
+                        }
                     }
                 }
             }

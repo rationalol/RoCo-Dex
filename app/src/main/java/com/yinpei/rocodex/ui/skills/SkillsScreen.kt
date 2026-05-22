@@ -61,6 +61,7 @@ fun SkillsScreen(
 ) {
     val skillItems by viewModel.skillItems.collectAsState()
     val selectedElements by viewModel.selectedElements.collectAsState()
+    val selectedSkillTypes by viewModel.selectedSkillTypes.collectAsState()
     val searchQuery by viewModel.searchQuery.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
 
@@ -130,6 +131,9 @@ fun SkillsScreen(
                         selectedElements = selectedElements,
                         onToggleElement = { viewModel.toggleElement(it) },
                         onClearFilters = { viewModel.clearFilters() },
+                        showSkillTypeFilter = true,
+                        selectedSkillTypes = selectedSkillTypes,
+                        onToggleSkillType = { viewModel.toggleSkillType(it) },
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
                 }
