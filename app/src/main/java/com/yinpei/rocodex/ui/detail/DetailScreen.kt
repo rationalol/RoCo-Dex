@@ -648,10 +648,7 @@ private fun FormsSection(forms: List<PetForm>, onPetClick: (Int) -> Unit) {
                         )
 
                         Text(
-                            text = when (form.type != "") {
-                                true -> form.type
-                                else -> "首领化"
-                            },
+                            text = "",
                             fontSize = 9.sp,
                             color = MaterialTheme.colorScheme.primary,
                             fontWeight = FontWeight.Bold,

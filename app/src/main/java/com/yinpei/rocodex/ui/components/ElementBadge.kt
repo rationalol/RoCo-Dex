@@ -45,6 +45,7 @@ fun ElementBadge(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = if (uniformWidth) Arrangement.Center else Arrangement.Start
     ) {
+
         AsyncImage(
             model = mapElementIconPath(element),
             contentDescription = null,

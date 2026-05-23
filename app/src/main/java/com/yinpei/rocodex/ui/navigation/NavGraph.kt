@@ -24,6 +24,10 @@ import androidx.navigation.navArgument
 import com.yinpei.rocodex.ui.common.PlaceholderScreen
 import com.yinpei.rocodex.ui.detail.DetailScreen
 import com.yinpei.rocodex.ui.gallery.GalleryScreen
+import com.yinpei.rocodex.ui.lineup.LineupAddPetScreen
+import com.yinpei.rocodex.ui.lineup.LineupDetailScreen
+import com.yinpei.rocodex.ui.lineup.LineupPetConfigScreen
+import com.yinpei.rocodex.ui.lineup.LineupScreen
 import com.yinpei.rocodex.ui.skills.SkillDetailScreen
 import com.yinpei.rocodex.ui.skills.SkillsScreen
 import com.yinpei.rocodex.ui.tools.ToolsScreen
@@ -37,12 +41,20 @@ object Routes {
     const val DETAIL = "detail/{petId}"
     const val WEAKNESS = "weakness"
     const val PLACEHOLDER = "placeholder/{title}"
+    const val LINEUP = "lineup"
+    const val LINEUP_DETAIL = "lineup_detail/{lineupId}"
+    const val LINEUP_ADD_PET = "lineup_add_pet/{lineupId}"
+    const val LINEUP_PET_CONFIG = "lineup_pet_config/{lineupId}/{petIndex}"
 
     fun detail(petId: Int) = "detail/$petId"
 
     fun placeholder(title: String) = "placeholder/${Uri.encode(title)}"
 
     fun skillDetail(skillIndex: Int) = "skill_detail/$skillIndex"
+
+    fun lineupDetail(lineupId: Int) = "lineup_detail/$lineupId"
+    fun lineupAddPet(lineupId: Int) = "lineup_add_pet/$lineupId"
+    fun lineupPetConfig(lineupId: Int, petIndex: Int) = "lineup_pet_config/$lineupId/$petIndex"
 }
 
 @RequiresApi(Build.VERSION_CODES.O)
@@ -89,6 +101,9 @@ fun NavGraph(navController: NavHostController) {
             ToolsScreen(
                 onWeaknessClick = {
                     navController.navigate(Routes.WEAKNESS)
+                },
+                onLineupClick = {
+                    navController.navigate(Routes.LINEUP)
                 },
                 onPlaceholderClick = { title ->
                     navController.navigate(Routes.placeholder(title))
@@ -145,6 +160,73 @@ fun NavGraph(navController: NavHostController) {
 
         composable(Routes.WEAKNESS) {
             WeaknessScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
+
+        composable(Routes.LINEUP) {
+            LineupScreen(
+                onBack = { navController.popBackStack() },
+                onLineupClick = { lineupId ->
+                    navController.navigate(Routes.lineupDetail(lineupId))
+                }
+            )
+        }
+
+        composable(
+            route = Routes.LINEUP_DETAIL,
+            arguments = listOf(
+                navArgument("lineupId") { type = NavType.IntType }
+            )
+        ) { backStackEntry ->
+            val lineupId = backStackEntry.arguments?.getInt("lineupId") ?: return@composable
+            LineupDetailScreen(
+                lineupId = lineupId,
+                onBack = { navController.popBackStack() },
+                onAddPetClick = { id ->
+                    navController.navigate(Routes.lineupAddPet(id))
+                },
+                onPetClick = { petIndex ->
+                    navController.navigate(Routes.lineupPetConfig(lineupId, petIndex))
+                }
+            )
+        }
+
+        composable(
+            route = Routes.LINEUP_ADD_PET,
+            arguments = listOf(
+                navArgument("lineupId") { type = NavType.IntType }
+            )
+        ) { backStackEntry ->
+            val lineupId = backStackEntry.arguments?.getInt("lineupId") ?: return@composable
+            LineupAddPetScreen(
+                lineupId = lineupId,
+                onBack = { navController.popBackStack() },
+                onPetSelected = { petIndex ->
+                    android.util.Log.d("LineupDebug", "NavGraph: onPetSelected triggered, petIndex=$petIndex")
+                    // Pop the AddPetScreen and navigate to ConfigScreen
+                    navController.popBackStack()
+                    // Use launchSingleTop to avoid duplicate navigation events if clicked multiple times
+                    navController.navigate(Routes.lineupPetConfig(lineupId, petIndex)) {
+                        launchSingleTop = true
+                    }
+                    android.util.Log.d("LineupDebug", "NavGraph: navigated to lineupPetConfig")
+                }
+            )
+        }
+
+        composable(
+            route = Routes.LINEUP_PET_CONFIG,
+            arguments = listOf(
+                navArgument("lineupId") { type = NavType.IntType },
+                navArgument("petIndex") { type = NavType.IntType }
+            )
+        ) { backStackEntry ->
+            val lineupId = backStackEntry.arguments?.getInt("lineupId") ?: return@composable
+            val petIndex = backStackEntry.arguments?.getInt("petIndex") ?: return@composable
+            LineupPetConfigScreen(
+                lineupId = lineupId,
+                petIndex = petIndex,
                 onBack = { navController.popBackStack() }
             )
         }

@@ -48,6 +48,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun ToolsScreen(
     onWeaknessClick: () -> Unit,
+    onLineupClick: () -> Unit,
     onPlaceholderClick: (String) -> Unit
 ) {
     Scaffold(
@@ -80,7 +81,9 @@ fun ToolsScreen(
             MenuItem(
                 icon = Icons.Outlined.ClearAll,
                 title = "阵容搭配"
-            )
+            ) {
+                onLineupClick()
+            }
             MenuItem(
                 icon = Icons.Outlined.SyncAlt,
                 title = "属性克制"

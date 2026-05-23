@@ -281,12 +281,12 @@ fun StarConsumeBadge(
         horizontalArrangement = if (uniformWidth) Arrangement.Center else Arrangement.Start
     ) {
         AsyncImage(
-            model = energyConsumptionIconPath("kid_star"),
+            model = energyConsumptionIconPath("star"),
             contentDescription = null,
-            modifier = Modifier.size(14.dp)
+            modifier = Modifier.size(10.dp)
         )
 
-
+        Spacer(modifier = Modifier.width(4.dp))
         Text(
             text = "能耗",
             color = color,

@@ -34,19 +34,21 @@ pets = []
 
 for key, d in data.items():
 
-    element = []
+    element = ["首领"]
 
-    petIndex = ''
+    petIndex = '首领化'
 
     shiny = 0
 
     for p in elementList:
         if int(key) == int(p.get("i")):
+            element = []
             petIndex = p.get("n")
             shiny = p.get('sh')
             element.append(p.get("e"))
             if p.get("e2") != "":
                 element.append(p.get("e2"))
+
 
     # 转换技能
     skills = {
