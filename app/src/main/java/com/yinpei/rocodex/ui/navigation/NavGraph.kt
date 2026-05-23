@@ -32,6 +32,7 @@ import com.yinpei.rocodex.ui.skills.SkillDetailScreen
 import com.yinpei.rocodex.ui.skills.SkillsScreen
 import com.yinpei.rocodex.ui.tools.ToolsScreen
 import com.yinpei.rocodex.ui.weakness.WeaknessScreen
+import com.yinpei.rocodex.ui.map.MapScreen
 
 object Routes {
     const val GALLERY = "gallery"
@@ -45,6 +46,8 @@ object Routes {
     const val LINEUP_DETAIL = "lineup_detail/{lineupId}"
     const val LINEUP_ADD_PET = "lineup_add_pet/{lineupId}"
     const val LINEUP_PET_CONFIG = "lineup_pet_config/{lineupId}/{petIndex}"
+
+    const val MAP = "map"
 
     fun detail(petId: Int) = "detail/$petId"
 
@@ -107,6 +110,9 @@ fun NavGraph(navController: NavHostController) {
                 },
                 onPlaceholderClick = { title ->
                     navController.navigate(Routes.placeholder(title))
+                },
+                onMapClick = {
+                    navController.navigate(Routes.MAP)
                 }
             )
         }
@@ -227,6 +233,12 @@ fun NavGraph(navController: NavHostController) {
             LineupPetConfigScreen(
                 lineupId = lineupId,
                 petIndex = petIndex,
+                onBack = { navController.popBackStack() }
+            )
+        }
+
+        composable(Routes.MAP) {
+            MapScreen(
                 onBack = { navController.popBackStack() }
             )
         }

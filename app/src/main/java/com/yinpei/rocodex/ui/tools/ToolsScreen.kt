@@ -49,7 +49,8 @@ import androidx.compose.ui.unit.sp
 fun ToolsScreen(
     onWeaknessClick: () -> Unit,
     onLineupClick: () -> Unit,
-    onPlaceholderClick: (String) -> Unit
+    onPlaceholderClick: (String) -> Unit,
+    onMapClick: () -> Unit
 ) {
     Scaffold(
         containerColor = MaterialTheme.colorScheme.surface,
@@ -93,7 +94,9 @@ fun ToolsScreen(
             MenuItem(
                 icon = Icons.Outlined.Map,
                 title = "地图"
-            )
+            ) {
+                onMapClick()
+            }
         }
     }
 }

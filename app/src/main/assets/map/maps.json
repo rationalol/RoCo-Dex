@@ -1,0 +1,40 @@
+[
+  {
+    "id": 61,
+    "sn": 1,
+    "game_id": 188212,
+    "title": "卡洛西亚大陆",
+    "slug": "RocoKindom",
+    "initial_zoom": 8,
+    "start_lat": 0.0019869074,
+    "start_lng": 0.0006658153,
+    "bg_color": "",
+    "bg_image": "",
+    "offset_revise": "{\"x\":0,\"y\":0,\"zoom\":6000}",
+    "tile_sets": "[{\"name\":\"main\",\"path\":\"rocokindom/tiles/地图\",\"type\":\"raster\",\"pattern\":\"/{z}/{x}_{y}\",\"min_zoom\":8,\"max_zoom\":11,\"auto_webp\":1,\"extension\":\"jpg\",\"lng\":0,\"lat\":0,\"tileSize\":256,\"offset_revise\":{\"x\":0,\"y\":0,\"zoom\":6000},\"bounds\":[-1.40625,-1.40569,1.40625,1.40569]}]",
+    "status": 1,
+    "extra": "{\"titleStyle\":{\"level_1\":{\"fontSize\":[]},\"level_2\":{\"fontSize\":[]},\"level_3\":{\"fontSize\":[]}},\"pointStyle\":{\"iconSize\":[]}}",
+    "created_at": "2025-04-08 10:12:46",
+    "updated_at": "2026-04-01 16:20:30",
+    "underground": []
+  },
+  {
+    "id": 91,
+    "sn": 2,
+    "game_id": 188212,
+    "title": "魔法学院",
+    "slug": "Mofaxueyuan",
+    "initial_zoom": 8,
+    "start_lat": -0.1829463477,
+    "start_lng": 0.1669909379,
+    "bg_color": "",
+    "bg_image": "",
+    "offset_revise": "{\"x\":0,\"y\":0,\"zoom\":6000}",
+    "tile_sets": "[{\"name\":\"main\",\"path\":\"rocokindom/tiles/3月-魔法学院地图\",\"type\":\"raster\",\"pattern\":\"/{z}/{x}_{y}\",\"min_zoom\":8,\"max_zoom\":11,\"auto_webp\":1,\"extension\":\"jpg\",\"lng\":0,\"lat\":0,\"tileSize\":256,\"offset_revise\":{\"x\":0,\"y\":0,\"zoom\":6000},\"bounds\":[-1.40625,-1.40569,1.40625,1.40569]}]",
+    "status": 1,
+    "extra": "{\"titleStyle\":{\"level_1\":{\"fontSize\":[]},\"level_2\":{\"fontSize\":[]},\"level_3\":{\"fontSize\":[]}},\"pointStyle\":{\"iconSize\":[]}}",
+    "created_at": "2026-04-01 16:19:31",
+    "updated_at": "2026-04-01 16:20:05",
+    "underground": []
+  }
+]
