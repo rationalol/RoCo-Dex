@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.yinpei.rocodex.data.model.MapData
 import com.yinpei.rocodex.data.model.RegionPointFeature
 import com.yinpei.rocodex.ui.theme.RoCoFamily
 import kotlinx.coroutines.Dispatchers
@@ -44,6 +45,7 @@ fun MapScreen(
 ) {
     val regionPoints by viewModel.regionPoints.collectAsState()
     val currentMapId by viewModel.currentMapId.collectAsState()
+    val currentMapData by viewModel.currentMapData.collectAsState()
 
     Scaffold(
         topBar = {
@@ -68,7 +70,8 @@ fun MapScreen(
         ) {
             RocoMapView(
                 regionPoints = regionPoints,
-                currentMapId = currentMapId
+                currentMapId = currentMapId,
+                currentMapData = currentMapData
             )
 
             // 悬浮多地图切换 UI 组件 (MapSwitcherCard)
@@ -166,47 +169,97 @@ fun MapSwitcherCard(
 @Composable
 fun RocoMapView(
     regionPoints: List<RegionPointFeature>,
-    currentMapId: Int
+    currentMapId: Int,
+    currentMapData: MapData?
 ) {
     val context = LocalContext.current
-    val minX = 254
-    val maxX = 257
-    val minY = 254
-    val maxY = 257
     val tileSize = 256
-
-    val tiles = remember { mutableStateMapOf<String, ImageBitmap>() }
     
-    // Clear tiles when mapId changes
-    LaunchedEffect(currentMapId) {
-        tiles.clear()
+    val bounds = currentMapData?.getBounds() ?: emptyList()
+    var minX = 508
+    var maxX = 515
+    var minY = 508
+    var maxY = 515
+
+    if (bounds.size == 4) {
+        val minLng = bounds[0]
+        val minLat = bounds[1]
+        val maxLng = bounds[2]
+        val maxLat = bounds[3]
         
-        val tileFolder = if (currentMapId == 61) {
-            "scripts/map/roco_tiles_dalu_9"
-        } else {
-            "scripts/map/roco_tiles_mofaxueyuan_9"
-        }
+        // Use Zoom 10 for coordinate system
+        val (topLeftX, topLeftY) = mapLibreLngLatToPixel(minLng, maxLat, 10, tileSize)
+        val (bottomRightX, bottomRightY) = mapLibreLngLatToPixel(maxLng, minLat, 10, tileSize)
+        
+        minX = (topLeftX / tileSize).toInt()
+        maxX = (bottomRightX / tileSize).toInt()
+        minY = (topLeftY / tileSize).toInt()
+        maxY = (bottomRightY / tileSize).toInt()
+    }
+
+    var scale by remember { mutableStateOf(1f) }
+    var offset by remember { mutableStateOf(Offset.Zero) }
+    val textMeasurer = rememberTextMeasurer()
+    
+    val renderZoom = if (scale <= 1.5f) 9 else 10
+
+    val tiles9 = remember { mutableStateMapOf<String, ImageBitmap>() }
+    val tiles10 = remember { mutableStateMapOf<String, ImageBitmap>() }
+    
+    LaunchedEffect(currentMapId) {
+        scale = 1f
+        offset = Offset.Zero
+    }
+
+    // Load tiles when mapId, renderZoom, or mapData changes
+    LaunchedEffect(currentMapId, renderZoom, currentMapData) {
+        if (currentMapData == null) return@LaunchedEffect
+        tiles9.clear()
+        tiles10.clear()
+        
+        val folderBase = if (currentMapId == 61) "scripts/map/roco_tiles_dalu" else "scripts/map/roco_tiles_mofaxueyuan"
+        val folder9 = "${folderBase}_9"
+        val folder10 = "${folderBase}_10"
 
         withContext(Dispatchers.IO) {
-            for (x in minX..maxX) {
-                for (y in minY..maxY) {
-                    val filename = "$tileFolder/${x}_${y}.jpg"
+            val minX9 = minX / 2
+            val maxX9 = maxX / 2
+            val minY9 = minY / 2
+            val maxY9 = maxY / 2
+            
+            // 始终加载 9 层级瓦片作为 fallback 或是缩小状态下的底图
+            for (x9 in minX9..maxX9) {
+                for (y9 in minY9..maxY9) {
+                    val filename = "$folder9/${x9}_${y9}.jpg"
                     try {
                         val stream = context.assets.open(filename)
                         val bitmap = BitmapFactory.decodeStream(stream)
-                        tiles["${x}_${y}"] = bitmap.asImageBitmap()
+                        tiles9["${x9}_${y9}"] = bitmap.asImageBitmap()
                         stream.close()
                     } catch (e: Exception) {
                         // ignore missing tiles
                     }
                 }
             }
+
+            // 如果当前在 10 层级，再尝试加载 10 级瓦片
+            if (renderZoom == 10) {
+                for (x in minX..maxX) {
+                    for (y in minY..maxY) {
+                        val filename = "$folder10/${x}_${y}.jpg"
+                        try {
+                            val stream = context.assets.open(filename)
+                            val bitmap = BitmapFactory.decodeStream(stream)
+                            tiles10["${x}_${y}"] = bitmap.asImageBitmap()
+                            stream.close()
+                        } catch (e: Exception) {
+                            // ignore missing tiles
+                        }
+                    }
+                }
+            }
         }
     }
-
-    var scale by remember { mutableStateOf(1f) }
-    var offset by remember { mutableStateOf(Offset.Zero) }
-    val textMeasurer = rememberTextMeasurer()
 
     Box(
         modifier = Modifier
@@ -229,27 +282,47 @@ fun RocoMapView(
             )
     ) {
         Canvas(modifier = Modifier.fillMaxSize()) {
-            // Draw Tiles
+            // Draw Tiles - 统一在 Zoom 10 网格下遍历
             for (x in minX..maxX) {
                 for (y in minY..maxY) {
-                    val tile = tiles["${x}_${y}"]
-                    if (tile != null) {
-                        val dstOffset = IntOffset((x - minX) * tileSize, (y - minY) * tileSize)
+                    val dstOffset = IntOffset((x - minX) * tileSize, (y - minY) * tileSize)
+                    val tile10 = if (renderZoom == 10) tiles10["${x}_${y}"] else null
+                    
+                    if (tile10 != null) {
+                        // 如果有 10 级瓦片，直接绘制
                         drawImage(
-                            image = tile,
+                            image = tile10,
                             dstOffset = dstOffset,
                             dstSize = IntSize(tileSize, tileSize)
                         )
+                    } else {
+                        // Fallback 降级：如果对应的 _10 瓦片不存在，或处于 renderZoom == 9 时，寻找父级 _9 瓦片
+                        val x9 = x / 2
+                        val y9 = y / 2
+                        val tile9 = tiles9["${x9}_${y9}"]
+                        
+                        if (tile9 != null) {
+                            // 裁剪对应的四分之一区域
+                            val halfSize = tileSize / 2
+                            val srcOffsetX = (x % 2) * halfSize
+                            val srcOffsetY = (y % 2) * halfSize
+                            
+                            drawImage(
+                                image = tile9,
+                                srcOffset = IntOffset(srcOffsetX, srcOffsetY),
+                                srcSize = IntSize(halfSize, halfSize),
+                                dstOffset = dstOffset,
+                                dstSize = IntSize(tileSize, tileSize)
+                            )
+                        }
                     }
                 }
             }
 
-            val zoomLevel = 9
-
             // Draw Region Texts (地名)
             val textStyleRegion = TextStyle(
                 color = Color.Black,
-                fontSize = 2.sp,
+                fontSize = 8.sp,
                 fontFamily = RoCoFamily,
                 shadow = Shadow(color = Color.White, blurRadius = 4f)
             )
@@ -271,15 +344,12 @@ fun RocoMapView(
                 )
             }
 
-            // Optional: Filter regionPoints conceptually. Since region_points.json doesn't have mapId,
-            // we'll draw them if they fall into typical bounds, but we just draw them all for now.
-            // If they are specific to a map, the original code had them drawn. 
             regionPoints.forEach { feature ->
                 if (feature.geometry.coordinates.size >= 2) {
                     val lng = feature.geometry.coordinates[0]
                     val lat = feature.geometry.coordinates[1]
 
-                    val (worldPx, worldPy) = mapLibreLngLatToPixel(lng, lat, zoomLevel, tileSize)
+                    val (worldPx, worldPy) = mapLibreLngLatToPixel(lng, lat, 10, tileSize)
                     val px = worldPx - (minX * tileSize)
                     val py = worldPy - (minY * tileSize)
                     
@@ -294,7 +364,7 @@ fun RocoMapView(
 /**
  * 完美还原 MapLibre GL 的经纬度到绝对世界像素的转换
  */
-fun mapLibreLngLatToPixel(lng: Double, lat: Double, zoom: Int = 9, tileSize: Int = 256): Pair<Float, Float> {
+fun mapLibreLngLatToPixel(lng: Double, lat: Double, zoom: Int = 10, tileSize: Int = 256): Pair<Float, Float> {
     val totalWidth = tileSize * (1 shl zoom)
     val x = ((lng + 180.0) / 360.0) * totalWidth
     val latRad = Math.toRadians(lat)

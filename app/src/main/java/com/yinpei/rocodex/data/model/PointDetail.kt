@@ -47,3 +47,25 @@ data class RegionPointFeature(
 data class RegionPointFeatureCollection(
     val features: List<RegionPointFeature>
 )
+
+@Serializable
+data class MapTileSet(
+    val bounds: List<Double> = emptyList()
+)
+
+@Serializable
+data class MapData(
+    val id: Int,
+    val title: String,
+    val tile_sets: String
+) {
+    fun getBounds(): List<Double> {
+        return try {
+            val json = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
+            val sets = json.decodeFromString<List<MapTileSet>>(tile_sets)
+            sets.firstOrNull()?.bounds ?: emptyList()
+        } catch (e: Exception) {
+            emptyList()
+        }
+    }
+}

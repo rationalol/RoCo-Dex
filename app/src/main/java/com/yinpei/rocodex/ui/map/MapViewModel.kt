@@ -3,6 +3,7 @@ package com.yinpei.rocodex.ui.map
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.yinpei.rocodex.data.model.MapData
 import com.yinpei.rocodex.data.model.PointDetail
 import com.yinpei.rocodex.data.model.RegionPointFeature
 import com.yinpei.rocodex.data.repository.MapRepository
@@ -16,6 +17,9 @@ class MapViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _currentMapId = MutableStateFlow(61)
     val currentMapId: StateFlow<Int> = _currentMapId.asStateFlow()
+
+    private val _currentMapData = MutableStateFlow<MapData?>(null)
+    val currentMapData: StateFlow<MapData?> = _currentMapData.asStateFlow()
 
     private val _points = MutableStateFlow<List<PointDetail>>(emptyList())
     val points: StateFlow<List<PointDetail>> = _points.asStateFlow()
@@ -40,7 +44,9 @@ class MapViewModel(application: Application) : AndroidViewModel(application) {
             // clear points immediately for "instant sync clear"
             _points.value = emptyList()
             _regionPoints.value = emptyList()
+            _currentMapData.value = null
             
+            _currentMapData.value = repository.getMapDataById(mapId)
             _points.value = repository.getPointsByMapId(mapId)
             
             if (mapId == 61) {

@@ -1,6 +1,7 @@
 package com.yinpei.rocodex.data.repository
 
 import android.content.Context
+import com.yinpei.rocodex.data.model.MapData
 import com.yinpei.rocodex.data.model.PointDetail
 import com.yinpei.rocodex.data.model.PointFeatureCollection
 import com.yinpei.rocodex.data.model.RegionPointFeature
@@ -14,8 +15,23 @@ class MapRepository(private val context: Context) {
 
     private var cachedPoints: List<PointDetail>? = null
     private var cachedRegions: List<RegionPointFeature>? = null
+    private var cachedMaps: List<MapData>? = null
     
     private val json = Json { ignoreUnknownKeys = true }
+
+    suspend fun getAllMaps(): List<MapData> = withContext(Dispatchers.IO) {
+        if (cachedMaps == null) {
+            context.assets.open("map/maps.json").use { inputStream ->
+                val jsonString = InputStreamReader(inputStream).readText()
+                cachedMaps = json.decodeFromString<List<MapData>>(jsonString)
+            }
+        }
+        return@withContext cachedMaps ?: emptyList()
+    }
+
+    suspend fun getMapDataById(mapId: Int): MapData? = withContext(Dispatchers.IO) {
+        return@withContext getAllMaps().find { it.id == mapId }
+    }
 
     suspend fun getAllPoints(): List<PointDetail> = withContext(Dispatchers.IO) {
         if (cachedPoints == null) {
