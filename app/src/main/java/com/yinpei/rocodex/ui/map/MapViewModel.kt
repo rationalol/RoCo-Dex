@@ -24,6 +24,19 @@ class MapViewModel(application: Application) : AndroidViewModel(application) {
     private val _points = MutableStateFlow<List<PointDetail>>(emptyList())
     val points: StateFlow<List<PointDetail>> = _points.asStateFlow()
 
+    private val _selectedPointTypes = MutableStateFlow<Set<Int>>(emptySet())
+    val selectedPointTypes: StateFlow<Set<Int>> = _selectedPointTypes.asStateFlow()
+
+    fun togglePointType(typeId: Int) {
+        val current = _selectedPointTypes.value.toMutableSet()
+        if (current.contains(typeId)) {
+            current.remove(typeId)
+        } else {
+            current.add(typeId)
+        }
+        _selectedPointTypes.value = current
+    }
+
     private val _regionPoints = MutableStateFlow<List<RegionPointFeature>>(emptyList())
     val regionPoints: StateFlow<List<RegionPointFeature>> = _regionPoints.asStateFlow()
 
