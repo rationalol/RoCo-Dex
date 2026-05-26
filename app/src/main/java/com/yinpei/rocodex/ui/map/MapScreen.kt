@@ -21,6 +21,7 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.*
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.drawText
 import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.text.TextStyle
@@ -305,6 +306,7 @@ fun RocoMapView(
     currentMapData: MapData?
 ) {
     val context = LocalContext.current
+    val density = LocalDensity.current
     val tileSize = 256
     
     val bounds = currentMapData?.getBounds() ?: emptyList()
@@ -470,11 +472,13 @@ fun RocoMapView(
             }
 
             // Draw Region Texts (地名)
+            // 抵消全局 scale，让文字在屏幕上保持恒定大小 (约 10sp)
+            val dynamicFontSize = (10f / scale).sp
             val textStyleRegion = TextStyle(
                 color = Color.Black,
-                fontSize = 8.sp,
+                fontSize = dynamicFontSize,
                 fontFamily = RoCoFamily,
-                shadow = Shadow(color = Color.White, blurRadius = 4f)
+                shadow = Shadow(color = Color.White, blurRadius = 4f / scale)
             )
 
             // Helper to measure and draw text centered
@@ -509,6 +513,8 @@ fun RocoMapView(
             }
 
             // Draw Point Icons
+            val baseIconSizePx = with(density) { 36.dp.toPx() }
+            
             points.forEach { point ->
                 if (selectedPointTypes.contains(point.type)) {
                     val icon = icons[point.type]
@@ -517,12 +523,19 @@ fun RocoMapView(
                         val px = worldPx - (minX * tileSize)
                         val py = worldPy - (minY * tileSize)
                         
+                        // 抵消 Canvas 的全局 scale，使图标在屏幕上的基础大小保持在 36dp 左右
+                        // 为了实现“随着放大逐渐缩小”的效果，我们在 scale > 1 时额外增加一个缩小系数
+                        val extraShrink = if (scale > 1f) 1f + (scale - 1f) * 0.5f else 1f
+                        val drawSize = baseIconSizePx / (scale * extraShrink)
+                        
                         // Draw centered icon
-                        val iconWidth = icon.width.toFloat()
-                        val iconHeight = icon.height.toFloat()
                         drawImage(
                             image = icon,
-                            topLeft = Offset(px - iconWidth / 2f, py - iconHeight / 2f)
+                            dstOffset = IntOffset(
+                                (px - drawSize / 2f).toInt(),
+                                (py - drawSize / 2f).toInt()
+                            ),
+                            dstSize = IntSize(drawSize.toInt(), drawSize.toInt())
                         )
                     }
                 }
